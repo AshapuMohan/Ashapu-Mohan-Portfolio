@@ -1,0 +1,89 @@
+const projects = [
+  {
+    title: 'VehicleAid Website',
+    image: '/miniproject.png',
+    description: `Real-Time Mechanic Locator Web App. Developed a location-based web application to connect vehicle users with nearby mechanics. Integrated Google Maps API and created mechanic dashboard for service requests and history.`,
+    techStack: ['HTML', 'CSS', 'JavaScript', 'React', 'Express.js', 'MongoDB'],
+    detailsLink: 'https://vehicle-aid-pi.vercel.app/',
+    githubLink: 'https://github.com/AshapuMohan/VehicleAid',
+  },
+  {
+    title: 'Waste Management Website',
+    image: '/srp.png',
+    description: `Responsive website to promote awareness about recyclable waste and eco-friendly practices. Integrated Google QR Code Scanner for user convenience.`,
+    techStack: ['HTML', 'CSS', 'JavaScript', 'Qr Scanner'],
+    detailsLink: 'https://waste-management-six.vercel.app',
+    githubLink: 'https://github.com/AshapuMohan/Waste-Management',
+  },
+  {
+    title: 'Personal Portfolio',
+    image: '/portfolio.png',
+    description: `Responsive and animated portfolio site showcasing resume, projects, and contact information.`,
+    techStack: ['React', 'Tailwind CSS', 'JavaScript'],
+    detailsLink: 'https://mohanashapuportfolio.vercel.app',
+    githubLink: 'https://github.com/AshapuMohan/MohanAshapuPortfolio',
+  },
+];
+
+const Project = () => {
+  return (
+    <div className="flex flex-col items-center pt-24 px-4 sm:px-6 lg:px-10 mb-10">
+      <div className="p-4 bg-blue-100 text-blue-600 rounded-full mb-4">
+        <i className="fa-solid fa-diagram-project text-xl"></i>
+      </div>
+      <h2 className="text-4xl font-bold text-center text-black mb-2">My Projects</h2>
+      <p className="text-center text-gray-700 max-w-xl mb-10">
+        Browse through my portfolio of projects, showcasing my skills in web development, design, and problem-solving.
+      </p>
+
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 w-full">
+        {projects.map((project, index) => (
+          <div
+            key={index}
+            className="relative bg-white border border-gray-200 rounded-xl shadow-sm hover:shadow-lg transition duration-300 p-4 group"
+          >
+            <span className="absolute top-4 left-4 bg-blue-600 text-white text-xs px-3 py-1 rounded-full z-10 shadow">
+              Featured
+            </span>
+            <img
+              src={project.image}
+              alt={project.title}
+              className="w-full h-56 object-cover rounded-md"
+            />
+            <div className="pt-4">
+              <h3 className="text-xl font-bold text-gray-900 mb-2">{project.title}</h3>
+              <p className="text-gray-700 text-sm">{project.description}</p>
+              <ul className="flex flex-wrap gap-2 mt-4">
+                {project.techStack.map((tech, i) => (
+                  <li key={i} className="bg-gray-100 text-gray-800 text-xs px-2 py-1 rounded">
+                    {tech}
+                  </li>
+                ))}
+              </ul>
+              <div className="flex items-center mt-4">
+                <a
+                  href={project.detailsLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-blue-50 text-blue-700 px-3 py-1 rounded text-sm font-medium hover:bg-blue-100 transition"
+                >
+                  View Details <i className="fa-solid fa-arrow-right ml-1"></i>
+                </a>
+                <a
+                  href={project.githubLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="ml-4 text-gray-600 hover:text-black transition"
+                >
+                  <i className="fa-brands fa-github text-2xl"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+};
+
+export default Project;
