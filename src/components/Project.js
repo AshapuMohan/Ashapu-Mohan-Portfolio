@@ -20,7 +20,7 @@ const projects = [
     image: '/portfolio.png',
     description: `Responsive and animated portfolio site showcasing resume, projects, and contact information.`,
     techStack: ['React', 'Tailwind CSS', 'JavaScript'],
-    detailsLink: 'https://mohanashapuportfolio.vercel.app',
+    detailsLink: 'https://ashapumohanportfolio.netlify.app',
     githubLink: 'https://github.com/AshapuMohan/MohanAshapuPortfolio',
   },
 ];
