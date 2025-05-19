@@ -4,7 +4,7 @@ function HeroSection() {
   return (
     <div className='flex flex-col sm:flex-row items-center justify-center gap-40 p-10 min-h-screen bg-slate-50'>
       <img
-        src='/Mohan.jpg'
+        src='/Mohan1.jpg'
         alt='Mohan'
         className='w-[300px] rounded-xl transition-transform duration-300 hover:scale-105'
       />
