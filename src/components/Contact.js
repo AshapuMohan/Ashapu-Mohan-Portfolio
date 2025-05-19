@@ -81,7 +81,7 @@ const Contact = () => {
       </div>
       <h2 className="p-3 text-3xl md:text-4xl mt-15 font-bold tracking-tight text-black">Ready to Start Your Next Project?</h2>
       <p>I'm always looking for exciting opportunities to create exceptional digital experiences. Let's discuss how we can work together.</p>
-      <a href='mailto:ashapumohan123@gmail.com' className='bg-blue-500 text-white font-semibold p-2 m-3 rounded'>Gent In Touch</a>
+      <a href='mailto:ashapumohan123@gmail.com' className='bg-blue-500 text-white font-semibold p-2 m-3 rounded'>Get In Touch</a>
     </div>
   );
 };
