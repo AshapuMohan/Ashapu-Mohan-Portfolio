@@ -30,8 +30,9 @@ function Navbar() {
       <nav className='flex items-center justify-between px-6 py-4'>
         <a
           href='/'
-          className='text-2xl font-bold transition-transform duration-300 hover:scale-105'
+          className='flex items-center justify-center text-2xl font-bold transition-transform duration-300 hover:scale-105'
         >
+          <img className='rounded-full w-8 h-8 mr-1' src='/head.png' alt='Mohan' />
           Ashapu Mohan
         </a>
 
