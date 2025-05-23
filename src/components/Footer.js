@@ -36,6 +36,9 @@ export default function Footer() {
           <a href="mailto:ashapumohan123@gmail.com">
             <i className="fa-solid fa-envelope hover:text-red-500 hover:scale-150 transition-transform duration-300"></i>
           </a>
+          <a href="tel:+917989909756">
+            <i className="fa-solid fa-phone hover:text-red-500 hover:scale-150 transition-transform duration-300"></i>
+          </a>
         </div>
       </div>
 
