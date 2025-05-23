@@ -16,7 +16,6 @@ export default function Footer() {
         {/* Center Links */}
         <div className="flex justify-center gap-6 flex-wrap text-sm uppercase font-medium">
           <a href="/" className="hover:text-blue-400 transition duration-300">Home</a>
-          <a href="/projects" className="hover:text-blue-400 transition duration-300">Projects</a>
         </div>
 
         {/* Social Icons */}
