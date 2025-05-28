@@ -23,6 +23,14 @@ const projects = [
     detailsLink: 'https://ashapumohanportfolio.netlify.app',
     githubLink: 'https://github.com/AshapuMohan/MohanAshapuPortfolio',
   },
+  {
+    title: 'Collegetips Photo Gallery',
+    image: '/collegetips.png',
+    description: `A vibrant and responsive photo gallery showcasing team moments, creative campaigns, and behind-the-scenes fun. Easily filter images by category and explore highlights, including an embedded Instagram post.`,
+    techStack: ['React', 'Tailwind CSS', 'JavaScript'],
+    detailsLink: 'https://collegetipsgallery.vercel.app',
+    githubLink: 'https://github.com/AshapuMohan/CollegeTips',
+  },
 ];
 
 const Project = () => {
