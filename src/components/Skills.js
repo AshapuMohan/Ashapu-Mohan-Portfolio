@@ -16,7 +16,7 @@ function Skills() {
     {
       icon: 'fa-database',
       title: 'Database',
-      items: ['MongoDB & Mongoose', 'SQL Databases'],
+      items: ['MongoDB', 'SQL'],
     },
     {
       icon: 'fa-code',
