@@ -29,7 +29,7 @@ const projects = [
     description: `A vibrant and responsive photo gallery showcasing team moments, creative campaigns, and behind-the-scenes fun. Easily filter images by category and explore highlights, including an embedded Instagram post.`,
     techStack: ['React', 'Tailwind CSS', 'JavaScript'],
     detailsLink: 'https://collegetips-tau.vercel.app',
-    githubLink: 'https://github.com/AshapuMohan/CollegeTips',
+    githubLink: 'https://github.com/AshapuMohan/Collegetips',
   },
 ];
 
