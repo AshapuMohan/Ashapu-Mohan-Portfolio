@@ -1,8 +1,45 @@
 export default function Footer() {
+  const [showButton, setShowButton] = useState(false);
+  const footerRef = useRef(null);
+
+  useEffect(() => {
+    const footer = footerRef.current;
+
+    if (!footer) return;
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        setShowButton(entry.isIntersecting);
+      },
+      {
+        root: null,
+        threshold: 0.1,
+      }
+    );
+
+    observer.observe(footer);
+
+    return () => {
+      if (footer) observer.unobserve(footer);
+    };
+  }, []);
+
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
   return (
-    <footer className="bg-neutral-900 text-white py-5 px-5 rounded-t-3xl">
+    <footer ref={footerRef} className="bg-neutral-900 text-white py-5 px-5 rounded-t-3xl">
+    {showButton && (
+        <button
+          onClick={scrollToTop}
+          title="Back to Top"
+          className="absolute -top-6 right-5 bg-gray-600 text-white p-3 rounded-full shadow-lg"
+          style={{ width: '48px', height: '48px' }}
+        >
+          <i className="fa-solid fa-arrow-up text-xl"></i>
+        </button>
+      )}
       <h2 className="text-3xl font-bold text-center mb-6 animate-pulse">Let&apos;s Connect</h2>
-      
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-center text-center md:text-left">
         
         {/* Left Section */}
