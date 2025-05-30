@@ -67,11 +67,11 @@ function Navbar() {
           className="flex item-center justify-center text-2xl font-bold transition-transform duration-300 hover:scale-105"
         >
           <div className="relative w-10 h-10">
-            <div className="absolute inset-0 rounded-full bg-[#FFD9C5] clip-ring" />
+            <div className="absolute inset-0 rounded-full" />
             <img
               src="/head.png"
               alt="Profile"
-              className="relative z-10 rounded-full w-10 h-10 object-cover mx-auto hover:m-2"
+              className="relative z-10 rounded-full w-10 h-10 object-cover mx-auto"
             />
           </div>
           Ashapu Mohan
