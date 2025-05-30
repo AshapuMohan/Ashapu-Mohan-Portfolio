@@ -1,3 +1,5 @@
+import { useEffect, useState, useRef } from 'react';
+
 export default function Footer() {
   const [showButton, setShowButton] = useState(false);
   const footerRef = useRef(null);
