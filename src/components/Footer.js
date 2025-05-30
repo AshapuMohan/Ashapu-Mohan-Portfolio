@@ -29,9 +29,13 @@ export default function Footer() {
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
+
   return (
-    <footer ref={footerRef} className="bg-neutral-900 text-white py-5 px-5 rounded-t-3xl">
-    {showButton && (
+    <footer
+      ref={footerRef}
+      className="relative bg-neutral-900 text-white py-5 px-5 rounded-t-3xl mt-16"
+    >
+      {showButton && (
         <button
           onClick={scrollToTop}
           title="Back to Top"
@@ -41,17 +45,18 @@ export default function Footer() {
           <i className="fa-solid fa-arrow-up text-xl"></i>
         </button>
       )}
+
       <h2 className="text-3xl font-bold text-center mb-6 animate-pulse">Let&apos;s Connect</h2>
+
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-center text-center md:text-left">
-        
         {/* Left Section */}
-        <div className="flex flex-col items-center md:items-start text-center md:text-left">
+        <div className="flex flex-col items-center md:items-start">
           <h3 className="text-lg font-semibold mb-1 flex items-center gap-2">
             <i className="fa fa-code text-blue-400"></i> Ashapu Mohan
           </h3>
           <p className="text-sm text-gray-300">© 2025 All Rights Reserved</p>
         </div>
-        
+
         {/* Center Links */}
         <div className="flex justify-center gap-6 flex-wrap text-sm uppercase font-medium">
           <a href="/" className="hover:text-blue-400 transition duration-300">Home</a>
