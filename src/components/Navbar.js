@@ -71,7 +71,7 @@ function Navbar() {
             <img
               src="/head.png"
               alt="Profile"
-              className="relative z-10 rounded-full w-10 h-10 object-cover mx-auto"
+              className="relative z-10 rounded-full p-1 w-10 h-10 object-cover mx-auto"
             />
           </div>
           Ashapu Mohan
