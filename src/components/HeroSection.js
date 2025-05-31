@@ -22,7 +22,7 @@ function HeroSection() {
         >
           Contact Me <i className='fa-solid fa-arrow-right'></i>
         </a>
-        <a className='px-6' href='https://www.linkedin.com/in/mohan-ashapu-724aba258/'><i class="fa-brands fa-linkedin fa-lg transition-transform duration-300 hover:scale-180"></i></a>
+        <a className='px-6' href='https://www.linkedin.com/in/mohan-ashapu-724aba258/'><i class="fa-brands fa-linkedin fa-lg transition-transform duration-300 hover:scale-130"></i></a>
         <a href='mailto:ashapumohan123@gmail.com'><i class="fa-solid fa-envelope fa-lg transition-transform duration-300 hover:scale-180"></i></a>
         <a href='https://wa.me/917989909756?text=Hi%2C%20Ashapu%20Mohan,%20I%27m%20interested%20in%20your%20services.'><i class="fa-brands fa-whatsapp transition-transform duration-300 hover:scale-180 p-5"></i></a>
       </div>
