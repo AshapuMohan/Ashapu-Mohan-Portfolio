@@ -31,6 +31,15 @@ const projects = [
     detailsLink: 'https://collegetips-tau.vercel.app',
     githubLink: 'https://github.com/AshapuMohan/Collegetips',
   },
+  {
+    title: 'Linkedin-Clone',
+    image: '/linkedin-clone.png',
+    description: `This project is a frontend-only clone of LinkedIn, built using React and Tailwind CSS. It replicates the key user interface components and layout of LinkedIn, focusing on responsive design, clean component structure, and UI/UX consistency.`,
+    techStack: ['React', 'Tailwind CSS', 'JavaScript'],
+    detailsLink: 'https://linkedinclone-o7l9.onrender.com',
+    githubLink: 'https://github.com/AshapuMohan/Linkedinclone',
+  },
+  
 ];
 
 const Project = () => {
