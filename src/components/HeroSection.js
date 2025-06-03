@@ -6,7 +6,7 @@ function HeroSection() {
       <img
         src='/Mohan1.jpg'
         alt='Mohan'
-        className='w-[250px] rounded-xl transition-transform duration-300 hover:scale-105 animate-ping'
+        className='w-[250px] rounded-xl transition-transform duration-300 hover:scale-105 animate-pulse'
       />
       <div className='max-w-xl text-center sm:text-left'>
         <h1 className='mb-5 text-4xl sm:text-5xl font-bold'>
