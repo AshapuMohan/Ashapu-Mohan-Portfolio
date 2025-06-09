@@ -7,10 +7,12 @@ import Skills from './components/Skills';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
 import Project from './components/Project';
+import SEO from './components/SEO';
 
 function MainPage() {
   return (
     <div className="relative bg-gradient-to-tr from-blue-50 to-indigo-50 text-black">
+      <SEO />
       <Navbar />
 
       <div id="home" className='pt-15'>
