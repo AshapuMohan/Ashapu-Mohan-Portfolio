@@ -1,13 +1,5 @@
 const projects = [
   {
-    title: 'VehicleAid Website',
-    image: '/miniproject.png',
-    description: `Real-Time Mechanic Locator Web App. Developed a location-based web application to connect vehicle users with nearby mechanics. Integrated Google Maps API and created mechanic dashboard for service requests and history.`,
-    techStack: ['HTML', 'CSS', 'JavaScript', 'React', 'Express.js', 'MongoDB'],
-    detailsLink: 'https://vehicle-aid-pi.vercel.app/',
-    githubLink: 'https://github.com/AshapuMohan/VehicleAid',
-  },
-  {
     title: 'Waste Management Website',
     image: '/srp.png',
     description: `Responsive website to promote awareness about recyclable waste and eco-friendly practices. Integrated Google QR Code Scanner for user convenience.`,
@@ -45,6 +37,14 @@ const projects = [
     techStack: ['React', 'Tailwind CSS'],
     detailsLink: 'https://worldhive2025.onrender.com',
     githubLink: 'https://github.com/AshapuMohan/worldhive',
+  },
+    {
+    title: 'VehicleAid Website',
+    image: '/miniproject.png',
+    description: `Real-Time Mechanic Locator Web App. Developed a location-based web application to connect vehicle users with nearby mechanics. Integrated Google Maps API and created mechanic dashboard for service requests and history.`,
+    techStack: ['HTML', 'CSS', 'JavaScript', 'React', 'Express.js', 'MongoDB'],
+    detailsLink: 'https://vehicle-aid-pi.vercel.app/',
+    githubLink: 'https://github.com/AshapuMohan/VehicleAid',
   }
 ];
 
