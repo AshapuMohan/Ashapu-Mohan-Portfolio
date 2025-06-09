@@ -17,7 +17,7 @@ const SEO = () => {
       <meta property="og:url" content="https://ashapumohanportfolio.netlify.app/" />
       <meta property="og:title" content="Mohan Ashapu | Developer Portfolio" />
       <meta property="og:description" content="Explore the projects, skills, and contact information of Mohan Ashapu." />
-      <meta property="og:image" content="https://ashapumohanportfolio.netlify.app/og-image.png" />
+      <meta property="og:image" content="https://ashapumohanportfolio.netlify.app/portfolio.png" />
 
       {/* Twitter Card */}
       <meta name="twitter:card" content="summary_large_image" />
