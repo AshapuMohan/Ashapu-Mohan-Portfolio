@@ -1,128 +1,129 @@
-import React from 'react';
-import { FaTrophy, FaMedal, FaGraduationCap, FaAward } from 'react-icons/fa';
+import { FaTrophy, FaMedal, FaGraduationCap, FaAward } from "react-icons/fa"
+import { motion } from "framer-motion"
 
 const certificates = [
   {
-    certificate_type: 'Web Development Fundamentals',
-    certificate_name: 'IBM Skillbuild',
-    date: '2025',
+    certificate_type: "Web Development Fundamentals",
+    certificate_name: "IBM Skillbuild",
+    date: "2025",
   },
   {
-    certificate_type: 'CCNAv7: Introduction to Networks',
-    certificate_name: 'Cisco Networking Academy',
-    date: '2024',
+    certificate_type: "CCNAv7: Introduction to Networks",
+    certificate_name: "Cisco Networking Academy",
+    date: "2024",
   },
   {
-    certificate_type: 'Cloud Computing',
-    certificate_name: 'NPTEL',
-    date: '2024',
+    certificate_type: "Cloud Computing",
+    certificate_name: "NPTEL",
+    date: "2024",
   },
   {
-    certificate_type: 'Macroeconomics: Theory and Policy',
-    certificate_name: 'edX',
-    date: '2024',
+    certificate_type: "Macroeconomics: Theory and Policy",
+    certificate_name: "edX",
+    date: "2024",
   },
-];
+]
 
 const experience = [
   {
-    simulation_name: 'Front-End Software Engineering Job Simulation',
-    company_name: 'SkyScanner',
-    year: '2025',
+    simulation_name: "Front-End Software Engineering Job Simulation",
+    company_name: "SkyScanner",
+    year: "2025",
   },
   {
-    simulation_name: 'Advanced Software Engineering Job Simulation',
-    company_name: 'Walmart Global Tech',
-    year: '2025',
+    simulation_name: "Advanced Software Engineering Job Simulation",
+    company_name: "Walmart Global Tech",
+    year: "2025",
   },
   {
-    simulation_name: 'Data Visualisation: Business Insights Simulation',
-    company_name: 'TATA',
-    year: '2025',
+    simulation_name: "Data Visualisation: Business Insights Simulation",
+    company_name: "TATA",
+    year: "2025",
   },
   {
-    simulation_name: 'Salesforce Developer Virtual Internship',
-    company_name: 'Salesforce',
-    year: '2023',
+    simulation_name: "Salesforce Developer Virtual Internship",
+    company_name: "Salesforce",
+    year: "2023",
   },
-];
+]
 
 const SectionHeader = ({ icon, title }) => (
-  <div className="flex items-center gap-3 mb-5">
-    <div className="text-3xl text-blue-500">{icon}</div>
-    <h2 className="text-2xl font-bold text-gray-900">{title}</h2>
+  <div className="flex items-center gap-3 mb-6 sm:mb-8">
+    <div className="text-3xl sm:text-4xl text-blue-600">{icon}</div>
+    <h2 className="text-2xl sm:text-3xl font-extrabold text-gray-900">{title}</h2>
   </div>
-);
+)
 
 const Item = ({ icon, title, subtitle, date }) => (
-  <li className="p-3 rounded-lg bg-slate-50 hover:bg-slate-100 transition-all">
-    <div className="flex items-start gap-3">
-      <div className="text-yellow-400 text-2xl">{icon}</div>
-      <div className="flex-1">
-        <h3 className="font-semibold text-lg text-gray-800">{title}</h3>
-        <p className="text-sm text-blue-600 font-medium">{subtitle}</p>
-        <p className="text-sm font-semibold text-gray-600">{date}</p>
-      </div>
+  <motion.li
+    whileHover={{ scale: 1.03, boxShadow: "0 6px 12px rgba(0,0,0,0.1)" }}
+    transition={{ type: "spring", stiffness: 250 }}
+    className="bg-white rounded-xl p-4 sm:p-5 flex gap-4 items-center cursor-pointer shadow-md"
+  >
+    <div className="text-yellow-400 text-2xl sm:text-3xl flex-shrink-0">{icon}</div>
+    <div>
+      <h3 className="text-base sm:text-lg font-semibold text-gray-800">{title}</h3>
+      <p className="text-sm text-blue-600 font-medium">{subtitle}</p>
+      <p className="text-xs text-gray-500 mt-1">{date}</p>
     </div>
-  </li>
-);
+  </motion.li>
+)
 
 const Projects = () => {
   return (
-    <section className="bg-slate-50 py-10 px-4 sm:px-6 lg:px-20">
-      {/* Divider */}
-      <div className="flex items-center justify-center mb-4">
-        <div className="w-28 sm:w-40 border-t border-black"></div>
-        <span className="px-4 text-sm border border-gray-200 bg-blue-100 text-blue-600 rounded-full">
-          Milestones
-        </span>
-        <div className="w-28 sm:w-40 border-t border-black"></div>
-      </div>
-
-      {/* Heading */}
-      <h2 className="text-3xl sm:text-4xl font-bold text-center text-black">
-        Achievements & Experience
-      </h2>
-      <p className="text-center text-gray-700 mt-2 font-medium max-w-2xl mx-auto">
-        Recognitions, certifications, and professional journey that have shaped my career.
-      </p>
-
-      {/* Cards */}
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mt-10">
-        {/* Certificates */}
-        <div className="shadow-lg rounded-xl p-6 hover:shadow-xl transition-all">
-          <SectionHeader icon={<FaMedal />} title="Certificates & Achievements" />
-          <ul className="space-y-3">
-            {certificates.map((cert, index) => (
-              <Item
-                key={index}
-                icon={<FaGraduationCap />}
-                title={cert.certificate_type}
-                subtitle={cert.certificate_name}
-                date={cert.date}
-              />
-            ))}
-          </ul>
+    <section className="bg-gradient-to-tr from-blue-50 to-indigo-50 py-12 px-4 sm:px-8 md:px-12 lg:px-24">
+      <div className="max-w-7xl mx-auto w-full">
+        <div className="text-center mb-12">
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-gray-900 tracking-tight">
+            Achievements & Experience
+          </h1>
+          <p className="mt-4 text-base sm:text-lg text-gray-700 max-w-2xl mx-auto">
+            Recognitions, certifications, and professional journey that have shaped my career.
+          </p>
         </div>
-
-        {/* Experience */}
-        <div className="shadow-lg rounded-xl p-6 hover:shadow-xl transition-all">
-          <SectionHeader icon={<FaAward />} title="Professional Experience" />
-          <ul className="space-y-3">
-            {experience.map((exp, index) => (
-              <Item
-                key={index}
-                icon={<FaTrophy />}
-                title={exp.simulation_name}
-                subtitle={exp.company_name}
-                date={exp.year}
-              />
-            ))}
-          </ul>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+          <motion.div
+            initial={{ opacity: 0, x: -40 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            className="bg-white rounded-3xl shadow-xl p-6 sm:p-8"
+          >
+            <SectionHeader icon={<FaMedal />} title="Certificates & Achievements" />
+            <ul className="space-y-5 sm:space-y-6">
+              {certificates.map((cert, idx) => (
+                <Item
+                  key={idx}
+                  icon={<FaGraduationCap />}
+                  title={cert.certificate_type}
+                  subtitle={cert.certificate_name}
+                  date={cert.date}
+                />
+              ))}
+            </ul>
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, x: 40 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            className="bg-white rounded-3xl shadow-xl p-6 sm:p-8"
+          >
+            <SectionHeader icon={<FaAward />} title="Professional Experience" />
+            <ul className="space-y-5 sm:space-y-6">
+              {experience.map((exp, idx) => (
+                <Item
+                  key={idx}
+                  icon={<FaTrophy />}
+                  title={exp.simulation_name}
+                  subtitle={exp.company_name}
+                  date={exp.year}
+                />
+              ))}
+            </ul>
+          </motion.div>
         </div>
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default Projects;
+export default Projects
