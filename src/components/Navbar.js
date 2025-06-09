@@ -58,7 +58,7 @@ function Navbar() {
   return (
     <div
       className={`fixed top-0 left-0 right-0 z-100 transition-colors duration-500 ${
-        scrolled ? 'bg-white shadow-md' : 'bg-slate-50'
+        scrolled ? 'bg-white shadow-md' : 'bg-gradient-to-tr from-blue-50 to-indigo-50'
       }`}
     >
       <nav className="flex items-center justify-between px-6 py-4 relative">
