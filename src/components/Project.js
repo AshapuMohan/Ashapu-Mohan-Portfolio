@@ -50,7 +50,7 @@ const projects = [
 
 const Project = () => {
   return (
-    <div className="flex flex-col items-center pt-24 px-4 sm:px-6 lg:px-10 mb-10">
+    <div className="flex flex-col items-center pt-24 px-4 sm:px-6 lg:px-10 mb-20">
       <div className="p-4 bg-blue-100 text-blue-600 rounded-full mb-4">
         <i className="fa-solid fa-diagram-project text-xl"></i>
       </div>
