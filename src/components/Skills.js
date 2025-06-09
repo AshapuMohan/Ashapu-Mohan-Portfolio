@@ -47,7 +47,7 @@ const skills = [
 
 export default function Skills() {
   return (
-    <section id="skills" className="py-16 bg-gradient-to-tr from-blue-50 to-indigo-50 dark:bg-zinc-900">
+    <section id="skills" className="py-16 bg-gradient-to-tr from-blue-50 to-indigo-50 dark:bg-zinc-900 px-4 sm:px-8 md:px-12 lg:px-24">
       <div className="container mx-auto px-4">
         <motion.h2
           initial={{ opacity: 0, y: 50 }}
