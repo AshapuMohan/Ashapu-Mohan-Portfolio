@@ -24,23 +24,23 @@ const skills = [
   { icon: <SiMongodb className="text-green-700" />, label: 'MongoDB' },
   { icon: <FaGitAlt className="text-orange-500" />, label: 'Git' },
   {
-    icon: <img src="/icons/bootstrap.png" alt="Bootstrap" className="w-10 h-10" />,
+    icon: <img src="/bootstrap.png" alt="Bootstrap" className="w-10 h-10" />,
     label: 'Bootstrap'
   },
   {
-    icon: <img src="/icons/mysql.png" alt="SQL" className="w-10 h-10" />,
+    icon: <img src="/mysql.png" alt="SQL" className="w-10 h-10" />,
     label: 'SQL'
   },
   {
-    icon: <img src="/icons/c.png" alt="C" className="w-10 h-10" />,
+    icon: <img src="/c.png" alt="C" className="w-10 h-10" />,
     label: 'C'
   },
   {
-    icon: <img src="/icons/cpp.png" alt="C++" className="w-10 h-10" />,
+    icon: <img src="/cpp.png" alt="C++" className="w-10 h-10" />,
     label: 'C++'
   },
   {
-    icon: <img src="/icons/java.png" alt="Java" className="w-10 h-10" />,
+    icon: <img src="/java.png" alt="Java" className="w-10 h-10" />,
     label: 'Java'
   }
 ]
