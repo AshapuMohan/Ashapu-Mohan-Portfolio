@@ -10,7 +10,7 @@ import Project from './components/Project';
 
 function MainPage() {
   return (
-    <div className="relative bg-whitesome text-black">
+    <div className="relative bg-gradient-to-tr from-blue-50 to-indigo-50 text-black">
       <Navbar />
 
       <div id="home" className='pt-15'>
