@@ -33,7 +33,7 @@ export default function Footer() {
   return (
     <footer
       ref={footerRef}
-      className="relative bg-neutral-900 text-white py-5 px-5 rounded-t-3xl mt-16"
+      className="relative bg-neutral-900 text-white py-5 px-5 rounded-t-3xl"
     >
       {showButton && (
         <button
