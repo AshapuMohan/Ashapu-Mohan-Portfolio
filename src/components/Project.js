@@ -41,7 +41,7 @@ const projects = [
     {
     title: 'VehicleAid Website',
     image: '/miniproject.png',
-    description: `Real-Time Mechanic Locator Web App. Developed a location-based web application to connect vehicle users with nearby mechanics. Integrated Google Maps API and created mechanic dashboard for service requests and history.`,
+    description: `It is a demo web app that simulates how users can locate and request help from nearby mechanics during vehicle breakdowns. It showcases user-mechanic interaction flow using mock data, with login panels and service history using MongoDB.`,
     techStack: ['HTML', 'CSS', 'JavaScript', 'React', 'Express.js', 'MongoDB'],
     detailsLink: 'https://vehicle-aid-pi.vercel.app/',
     githubLink: 'https://github.com/AshapuMohan/VehicleAid',
