@@ -10,8 +10,8 @@ const projects = [
   {
     title: 'Personal Portfolio',
     image: '/portfolio.png',
-    description: `Responsive and animated portfolio site showcasing resume, projects, and contact information.`,
-    techStack: ['React', 'Tailwind CSS', 'JavaScript'],
+    description: `My portfolio presents my projects, skills, and certifications with an interactive UI built using React, Tailwind CSS, and Framer Motion. It also includes SEO optimization to improve visibility.`,
+    techStack: ['React', 'Tailwind CSS', 'Framer Motion'],
     detailsLink: 'https://ashapumohanportfolio.netlify.app',
     githubLink: 'https://github.com/AshapuMohan/MohanAshapuPortfolio',
   },
