@@ -34,7 +34,7 @@ const projects = [
     title: 'World Hive',
     image: '/worldhive.png',
     description: `WorldHive 2025 – A React.js and Tailwind-powered project showcasing country data dynamically fetched from the REST Countries API, with responsive UI and search functionality.`,
-    techStack: ['React', 'Tailwind CSS'],
+    techStack: ['React', 'Tailwind CSS','REST API'],
     detailsLink: 'https://worldhive2025.onrender.com',
     githubLink: 'https://github.com/AshapuMohan/worldhive',
   },
