@@ -90,7 +90,7 @@ const Contact = () => {
         </motion.div>
         <div>
           <h2 className="text-4xl font-extrabold mb-6 text-gray-900 text-center">Education</h2>
-          <p className="text-center text-gray-700 max-w-3xl mx-auto mb-12">
+          <p className="text-center mt-4 text-base sm:text-lg text-gray-700 max-w-2xl mx-auto">
             My academic journey that built the foundation for my technical expertise.
           </p>
 
