@@ -63,7 +63,7 @@ export default function Skills() {
         <div className="w-28 sm:w-40 border-t border-black"></div>
       </div>
 
-      <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-gray-900 tracking-tight">
+      <h2 className="text-3xl sm:text-4xl lg:text-5xl text-center font-extrabold text-gray-900 tracking-tight">
         Skills & Technologies
       </h2>
       <p className="mt-4 text-base sm:text-lg text-gray-700 max-w-2xl mx-auto">
