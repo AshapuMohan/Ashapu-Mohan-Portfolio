@@ -6,7 +6,7 @@ const educationData = [
   {
     degree: "B-Tech in Information Technology",
     institution: "MVGR College Of Engineering",
-    duration: "2022 - 2026",
+    duration: "2022 - present",
     gpa: "7.41/10",
     description:
       "Focused on core IT subjects including web technologies, data structures, and software engineering.",
