@@ -29,7 +29,7 @@ function Navbar() {
 
   useEffect(() => {
     const onScroll = () => {
-      setScrolled(window.scrollY > 10); // change 10 to whatever offset you want
+      setScrolled(window.scrollY > 10);
     };
     window.addEventListener('scroll', onScroll);
     return () => window.removeEventListener('scroll', onScroll);
