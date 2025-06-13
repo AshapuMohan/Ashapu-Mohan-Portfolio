@@ -55,8 +55,6 @@ export default function Footer() {
           </h3>
           <p className="text-sm text-gray-300">© 2025 All Rights Reserved</p>
         </div>
-
-        {/* Center Links */}
         <div className="flex justify-center gap-6 flex-wrap text-sm uppercase font-medium">
           <a href="/" className="hover:text-blue-400 transition duration-300">Home</a>
         </div>
