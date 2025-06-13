@@ -11,7 +11,7 @@ function HeroSection() {
       <div className='max-w-xl text-center sm:text-left'>
         <h1 className='mb-5 text-4xl sm:text-5xl font-bold'>
           Welcome to <span class="relative inline-block before:absolute before:-inset-1 before:block before:-skew-y-3 before:bg-blue-500 transition-tranform duration-300 hover:scale-105">
-          <span class="relative text-white dark:text-gray-950 ">Mohan's</span></span> Portfolio
+          <span class="relative text-white dark:text-gray-950 p-1">Mohan's</span></span> Portfolio
         </h1>
         <h4 className='mb-8 text-lg sm:text-2xl'>
           Aspiring Fullstack Web Developer | Passionate about blending web development and open source to create, innovate, and build amazing digital experiences! 🚀
