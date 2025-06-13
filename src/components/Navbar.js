@@ -120,7 +120,7 @@ function Navbar() {
           </li>
         </ul>
 
-        {/* Mobile Icon */}
+
         <div className="md:hidden z-50">
           <button onClick={() => setMenuOpen(!menuOpen)}>
             {menuOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
