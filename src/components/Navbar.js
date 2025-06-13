@@ -27,7 +27,6 @@ function Navbar() {
     };
   }, [menuOpen]);
 
-  // Scroll listener to toggle background color
   useEffect(() => {
     const onScroll = () => {
       setScrolled(window.scrollY > 10); // change 10 to whatever offset you want
