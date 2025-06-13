@@ -82,7 +82,6 @@ export default function Footer() {
         </div>
       </div>
 
-      {/* Bottom Note */}
       <p className="text-center mt-8 text-sm text-gray-400">
         Made with <i className="fa-solid fa-heart text-red-500 mx-1 animate-ping"></i> by Ashapu Mohan
       </p>
