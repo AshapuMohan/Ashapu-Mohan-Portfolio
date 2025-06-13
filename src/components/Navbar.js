@@ -127,7 +127,6 @@ function Navbar() {
           </button>
         </div>
 
-        {/* Mobile Menu */}
         {menuOpen && (
           <ul
             ref={menuRef}
