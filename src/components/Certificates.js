@@ -115,7 +115,7 @@ const Certificates = () => {
     ];
 
     return (
-        <div className=" bg-gradient-to-tr from-blue-50 to-indigo-50 min-h-screen sm:p-6 py-15">
+        <div className=" bg-gradient-to-tr from-blue-50 to-indigo-50 md:p-8 min-h-screen sm:p-6 py-15">
             <h1 className="text-3xl font-bold text-center mb-10">Certificates</h1>
 
             <Worker workerUrl={`https://unpkg.com/pdfjs-dist@3.11.174/build/pdf.worker.min.js`}>
