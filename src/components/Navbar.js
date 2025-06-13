@@ -104,6 +104,15 @@ function Navbar() {
             </Link>
           </li>
           <li>
+            <Link
+              className="hover:text-blue-400"
+              to="/certificates"
+              onClick={() => setMenuOpen(false)}
+            >
+              Certificates
+            </Link>
+          </li>
+          <li>
             <span
               className="cursor-pointer hover:text-blue-400"
               onClick={() => handleNavClick('contact')}
@@ -135,6 +144,11 @@ function Navbar() {
             <li>
               <Link to="/projects" onClick={() => setMenuOpen(false)}>
                 Projects
+              </Link>
+            </li>
+            <li>
+              <Link to="/certificates" onClick={() => setMenuOpen(false)}>
+                Certificates
               </Link>
             </li>
             <li>
