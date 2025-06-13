@@ -49,7 +49,6 @@ export default function Footer() {
       <h2 className="text-3xl font-bold text-center mb-6 animate-pulse">Let&apos;s Connect</h2>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-center text-center md:text-left">
-        {/* Left Section */}
         <div className="flex flex-col items-center md:items-start">
           <h3 className="text-lg font-semibold mb-1 flex items-center gap-2">
             <i className="fa fa-code text-blue-400"></i> Ashapu Mohan
