@@ -49,6 +49,19 @@ function ProjectsPage() {
     </div>
   );
 }
+function CertificatesPage() {
+  return (
+    <div className=" flex flex-col min-h-screen relative bg-whitesome text-black">
+      <Navbar />
+      <main className="flex-grow scroll-mt-20">
+        <Certificates/>
+      </main>
+      <div id="contact">
+        <Footer />
+      </div>
+    </div>
+  );
+}
 
 function App() {
   return (
