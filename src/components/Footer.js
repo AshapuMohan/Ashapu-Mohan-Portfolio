@@ -59,7 +59,6 @@ export default function Footer() {
           <a href="/" className="hover:text-blue-400 transition duration-300">Home</a>
         </div>
 
-        {/* Social Icons */}
         <div className="flex justify-center md:justify-end gap-4 text-lg">
           <a href="https://www.facebook.com/profile.php?id=100084252888068" target="_blank" rel="noreferrer">
             <i className="fa-brands fa-facebook hover:text-sky-800 hover:scale-150 transition-transform duration-300"></i>
