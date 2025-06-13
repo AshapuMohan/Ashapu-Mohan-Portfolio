@@ -9,7 +9,6 @@ function Navbar() {
   const location = useLocation();
   const navigate = useNavigate();
 
-  // Handle click outside to close menu
   useEffect(() => {
     const handleClickOutside = (event) => {
       if (menuRef.current && !menuRef.current.contains(event.target)) {
