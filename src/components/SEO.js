@@ -5,7 +5,7 @@ const SEO = () => {
   return (
     <Helmet>
       {/* Basic Meta Tags */}
-      <title>Mohan Ashapu | Ashapu Mohan | Full Stack Developer</title>
+      <title>Ashapu Mohan | Mohan Ashapu | Full Stack Developer</title>
       <meta name="description" content="Portfolio of Mohan Ashapu (also known as Ashapu Mohan), a passionate web developer skilled in React, Node.js, and modern web technologies." />
       <meta name="keywords" content="Mohan Ashapu, Ashapu Mohan, Ashapu, Mohan, Web Developer Portfolio, React Developer, Indian Developer, Indian Coder, BTech IT" />
       <meta name="author" content="Mohan Ashapu" />
