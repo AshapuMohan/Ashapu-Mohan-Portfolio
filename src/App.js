@@ -56,6 +56,7 @@ function App() {
       <Routes>
         <Route path="/" element={<MainPage />} />
         <Route path="/projects" element={<ProjectsPage />} />
+        <Route path='/certificates' element={<CertificatesPage/>}/>
       </Routes>
     </Router>
   );
