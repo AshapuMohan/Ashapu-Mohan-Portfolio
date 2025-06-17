@@ -5,7 +5,7 @@ import '@react-pdf-viewer/default-layout/lib/styles/index.css';
 
 const Certificates = () => {
     const [selectedCert, setSelectedCert] = useState(null);
-
+//certifications 
     const certificates = [
         {
             id: 1,
