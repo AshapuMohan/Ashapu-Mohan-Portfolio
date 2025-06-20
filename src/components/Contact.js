@@ -84,7 +84,7 @@ const Contact = () => {
         </motion.div>
         <div>
           <h2 className="text-4xl font-extrabold mb-6 text-gray-900 text-center">Education</h2>
-          <p className="text-center my- text-base sm:text-lg text-gray-700 max-w-2xl mx-auto">
+          <p className="text-center my- text-base sm:text-lg text-gray-700 max-w-2xl mx-auto pb-5">
             My academic journey that built the foundation for my technical expertise.
           </p>
 
