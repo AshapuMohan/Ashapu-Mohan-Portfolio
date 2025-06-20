@@ -7,7 +7,6 @@ const educationData = [
     degree: "B-Tech in Information Technology",
     institution: "MVGR College Of Engineering",
     duration: "2022 - present",
-    gpa: "7.41/10",
     description:
       "Focused on core IT subjects including web technologies, data structures, and software engineering.",
   },
@@ -15,14 +14,12 @@ const educationData = [
     degree: "Intermediate (MPC)",
     institution: "PPR Kaumudi Junior College",
     duration: "2020 - 2022",
-    gpa: "8.5/10",
     description: "Mathematics, Physics, and Chemistry with emphasis on problem-solving and analytical skills.",
   },
   {
     degree: "High School",
     institution: "ZPH School, Laveru",
     duration: "2015 - 2020",
-    gpa: "10/10",
     description: "General education with a strong academic foundation in all subjects.",
   },
 ];
@@ -47,9 +44,6 @@ const EducationCard = ({ degree, institution, duration, gpa, description }) => (
       <p className="flex items-center gap-2 text-gray-600 text-sm mb-1">
         <FaCalendar /> {duration}
       </p>
-      <span className="inline-block text-xs font-semibold bg-purple-100 text-blue-600 px-3 py-1 rounded-full">
-        GPA: {gpa}
-      </span>
     </div>
   </motion.div>
 );
