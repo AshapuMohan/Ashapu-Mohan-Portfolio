@@ -8,8 +8,6 @@ export default function Footer() {
   const location = useLocation();
 
   const handleNavClick = (id) => {
-    setMenuOpen(false);
-
     const scrollToSection = () => {
       const element = document.getElementById(id);
       if (element) {
@@ -33,17 +31,12 @@ export default function Footer() {
       ([entry]) => {
         setShowButton(entry.isIntersecting);
       },
-      {
-        root: null,
-        threshold: 0.1,
-      }
+      { root: null, threshold: 0.1 }
     );
 
     observer.observe(footer);
 
-    return () => {
-      observer.disconnect();
-    };
+    return () => observer.disconnect();
   }, []);
 
   const scrollToTop = () => {
@@ -96,18 +89,12 @@ export default function Footer() {
             </span>
           </li>
           <li>
-            <Link
-              className="hover:text-blue-400"
-              to="/projects"
-            >
+            <Link className="hover:text-blue-400" to="/projects">
               Projects
             </Link>
           </li>
           <li>
-            <Link
-              className="hover:text-blue-400"
-              to="/certificates"
-            >
+            <Link className="hover:text-blue-400" to="/certificates">
               Certificates
             </Link>
           </li>
