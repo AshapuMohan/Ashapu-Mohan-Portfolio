@@ -57,6 +57,7 @@ export default function Footer() {
         </div>
         <div className="flex justify-center gap-6 flex-wrap text-sm uppercase font-medium">
           <a href="/" className="hover:text-blue-400 transition duration-300">Home</a>
+          <a href="/projects" className="hover:text-blue-400 transition duration-300">Projects</a>
         </div>
 
         <div className="flex justify-center md:justify-end gap-4 text-lg">
