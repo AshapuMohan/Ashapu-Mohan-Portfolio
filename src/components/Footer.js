@@ -1,9 +1,13 @@
 import { useEffect, useState, useRef } from 'react';
+import { Link, useNavigate, useLocation } from 'react-router-dom';
 
 export default function Footer() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [showButton, setShowButton] = useState(false);
   const footerRef = useRef(null);
+  const navigate = useNavigate();
+  const location = useLocation();
+
   const handleNavClick = (id) => {
     setMenuOpen(false);
     if (location.pathname !== '/') {
@@ -21,9 +25,9 @@ export default function Footer() {
       }
     }
   };
+
   useEffect(() => {
     const footer = footerRef.current;
-
     if (!footer) return;
 
     const observer = new IntersectionObserver(
@@ -63,7 +67,7 @@ export default function Footer() {
         </button>
       )}
 
-      <h2 className="text-3xl font-bold text-center mb-6 animate-pulse">Let&apos;s Connect</h2>
+      <h2 className="text-3xl font-bold text-center mb-6 animate-pulse">Let's Connect</h2>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-center text-center md:text-left">
         <div className="flex flex-col items-center md:items-start">
@@ -72,7 +76,8 @@ export default function Footer() {
           </h3>
           <p className="text-sm text-gray-300">© 2025 All Rights Reserved</p>
         </div>
-        <div className="flex justify-center gap-6 flex-wrap text-sm uppercase font-medium">
+
+        <ul className="flex justify-center gap-6 flex-wrap text-sm uppercase font-medium list-none p-0 m-0">
           <li>
             <span
               className="cursor-pointer hover:text-blue-400"
@@ -115,20 +120,20 @@ export default function Footer() {
               Contact
             </span>
           </li>
-        </div>
+        </ul>
 
         <div className="flex justify-center md:justify-end gap-4 text-lg">
           <a href="https://www.facebook.com/profile.php?id=100084252888068" target="_blank" rel="noreferrer">
             <i className="fa-brands fa-facebook hover:text-sky-800 hover:scale-150 transition-transform duration-300"></i>
           </a>
           <a href="https://x.com/MohanAshapu" target="_blank" rel="noreferrer">
-            <i className="fa-brands fa-x-twitter hover:text-black-500 hover:scale-150 transition-transform duration-300"></i>
+            <i className="fa-brands fa-x-twitter hover:text-black hover:scale-150 transition-transform duration-300"></i>
           </a>
           <a href="https://www.linkedin.com/in/mohan-ashapu-724aba258" target="_blank" rel="noreferrer">
             <i className="fa-brands fa-linkedin hover:text-sky-500 hover:scale-150 transition-transform duration-300"></i>
           </a>
           <a href="https://github.com/AshapuMohan" target="_blank" rel="noreferrer">
-            <i className="fa-brands fa-github hover:text-black-500 hover:scale-150 transition-transform duration-300"></i>
+            <i className="fa-brands fa-github hover:text-black hover:scale-150 transition-transform duration-300"></i>
           </a>
           <a href="mailto:ashapumohan123@gmail.com">
             <i className="fa-solid fa-envelope hover:text-red-500 hover:scale-150 transition-transform duration-300"></i>
