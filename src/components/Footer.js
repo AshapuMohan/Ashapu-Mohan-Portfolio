@@ -99,7 +99,6 @@ export default function Footer() {
             <Link
               className="hover:text-blue-400"
               to="/projects"
-              onClick={() => setMenuOpen(false)}
             >
               Projects
             </Link>
@@ -108,7 +107,6 @@ export default function Footer() {
             <Link
               className="hover:text-blue-400"
               to="/certificates"
-              onClick={() => setMenuOpen(false)}
             >
               Certificates
             </Link>
