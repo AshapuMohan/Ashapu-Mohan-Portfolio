@@ -18,9 +18,9 @@ const certificates = [
     date: "2025",
   },
   {
-    certificate_type: "Macroeconomics: Theory and Policy",
-    certificate_name: "edX",
-    date: "2024",
+    certificate_type: "What Is Generative AI? Course",
+    certificate_name: "Linkedin Learning",
+    date: "2025",
   },
 ]
 
