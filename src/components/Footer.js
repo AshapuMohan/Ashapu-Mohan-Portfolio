@@ -72,7 +72,6 @@ export default function Footer() {
           <p className="text-sm text-gray-300">© 2025 All Rights Reserved</p>
         </div>
         <div className="flex justify-center gap-6 flex-wrap text-sm uppercase font-medium">
-          <ul className="hidden md:flex space-x-15 font-semibold text-lg">
           <li>
             <span
               className="cursor-pointer hover:text-blue-400"
@@ -115,7 +114,6 @@ export default function Footer() {
               Contact
             </span>
           </li>
-        </ul>
         </div>
 
         <div className="flex justify-center md:justify-end gap-4 text-lg">
