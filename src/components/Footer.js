@@ -3,7 +3,23 @@ import { useEffect, useState, useRef } from 'react';
 export default function Footer() {
   const [showButton, setShowButton] = useState(false);
   const footerRef = useRef(null);
-
+  const handleNavClick = (id) => {
+    setMenuOpen(false);
+    if (location.pathname !== '/') {
+      navigate('/');
+      setTimeout(() => {
+        const element = document.getElementById(id);
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }
+      }, 100);
+    } else {
+      const element = document.getElementById(id);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  };
   useEffect(() => {
     const footer = footerRef.current;
 
