@@ -1,7 +1,7 @@
 import React from "react";
 import { FaGraduationCap, FaCalendar, FaUniversity, FaEnvelope, FaDownload } from "react-icons/fa";
 import { motion } from "framer-motion";
-
+import { Link } from 'react-router-dom';
 const educationData = [
   {
     degree: "B-Tech in Information Technology",
