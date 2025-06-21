@@ -16,7 +16,7 @@ const Certificates = () => {
         {
             id: 2,
             cert_name: "Frontend for Java Full Stack Development",
-            cert_brand: "IBM SkillBuild",
+            cert_brand: "Coursera",
             cert_pdf: "/certificates/Frontend for Java Fullstack-coursera.pdf",
             cert_issdate: "June 21st, 2025"
         },
