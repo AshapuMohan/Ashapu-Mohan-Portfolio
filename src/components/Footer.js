@@ -2,7 +2,6 @@ import { useEffect, useState, useRef } from 'react';
 import { Link, useNavigate, useLocation } from 'react-router-dom';
 
 export default function Footer() {
-  const [menuOpen, setMenuOpen] = useState(false);
   const [showButton, setShowButton] = useState(false);
   const footerRef = useRef(null);
   const navigate = useNavigate();
