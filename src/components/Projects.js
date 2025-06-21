@@ -13,9 +13,9 @@ const certificates = [
     date: "2025",
   },
   {
-    certificate_type: "Cloud Computing",
-    certificate_name: "NPTEL",
-    date: "2024",
+    certificate_type: "MongoDB Node.js Developer Path for SmartBridge Course",
+    certificate_name: "MongoDB",
+    date: "2025",
   },
   {
     certificate_type: "Macroeconomics: Theory and Policy",
