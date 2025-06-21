@@ -8,9 +8,9 @@ const certificates = [
     date: "2025",
   },
   {
-    certificate_type: "CCNAv7: Introduction to Networks",
-    certificate_name: "Cisco Networking Academy",
-    date: "2024",
+    certificate_type: "Web Development in React.js: Development Basics Course",
+    certificate_name: "Coursera",
+    date: "2025",
   },
   {
     certificate_type: "Cloud Computing",
