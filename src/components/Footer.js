@@ -1,6 +1,7 @@
 import { useEffect, useState, useRef } from 'react';
 
 export default function Footer() {
+  const [menuOpen, setMenuOpen] = useState(false);
   const [showButton, setShowButton] = useState(false);
   const footerRef = useRef(null);
   const handleNavClick = (id) => {
