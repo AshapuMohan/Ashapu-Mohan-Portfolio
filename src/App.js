@@ -40,7 +40,7 @@ function ProjectsPage() {
   return (
     <div className=" flex flex-col min-h-screen relative bg-gradient-to-tr from-blue-50 to-indigo-50 text-black">
       <Navbar />
-      <main className="flex-grow scroll-mt-50">
+      <main className="flex-grow scroll-mt-100">
         <Project/>
       </main>
       <div id="contact">
