@@ -53,7 +53,7 @@ function CertificatesPage() {
   return (
     <div className=" flex flex-col min-h-screen relative bg-whitesome text-black">
       <Navbar />
-      <main className="flex-grow scroll-mt-20">
+      <main className="flex-grow scroll-mt-200">
         <Certificates/>
       </main>
       <div id="contact">
