@@ -23,7 +23,7 @@ function MainPage() {
         <Skills />
       </div>
 
-      <div id="projects" className="scroll-mt-100">
+      <div id="projects" className="scroll-mt-35">
         <Projects />
       </div>
 
