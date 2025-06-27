@@ -108,7 +108,7 @@ const Projects = () => {
             className="bg-white rounded-3xl shadow-xl p-6 sm:p-8"
           >
             <SectionHeader icon={<FaAward />} title="Professional Experience" />
-            <ul className="space-y-5 sm:space-y-6">
+            <ul className="space-y-6 sm:space-y-6">
               {experience.map((exp, idx) => (
                 <Item
                   key={idx}
