@@ -8,7 +8,7 @@ const certificates = [
     date: "2025",
   },
   {
-    certificate_type: "Web Development in React.js: Development Basics Course",
+    certificate_type: "Web Development in React.js: Development Basics",
     certificate_name: "Coursera",
     date: "2025",
   },
