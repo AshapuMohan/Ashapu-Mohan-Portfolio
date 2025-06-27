@@ -13,7 +13,7 @@ const certificates = [
     date: "2025",
   },
   {
-    certificate_type: "MongoDB Node.js Developer Path for SmartBridge Course",
+    certificate_type: "MongoDB Node.js Developer Path for SmartBridge",
     certificate_name: "MongoDB",
     date: "2025",
   },
