@@ -40,7 +40,7 @@ function HeroSection() {
             <a href="mailto:ashapumohan123@gmail.com">
               <i className="fa-solid fa-envelope fa-lg transition-transform duration-300 hover:scale-130"></i>
             </a>
-            <a href="https://wa.me/917989909756?text=Hi%2C%20Ashapu%20Mohan,%20I%27m%20interested%20in%20your%20services.">
+            <a href="https://wa.me/917989909756?text=Hi%2C%20Ashapu%20Mohan">
               <i className="fa-brands fa-whatsapp fa-lg transition-transform duration-300 hover:scale-130"></i>
             </a>
           </div>
