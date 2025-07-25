@@ -14,7 +14,7 @@ function HeroSection() {
     className="
       transition-transform duration-300 hover:scale-105
       w-[150px] rounded-full
-      md:w-[200px] md:rounded-full
+      md:w-[100px] md:rounded-full
       lg:w-[250px] lg:rounded-xl
     "
   />
