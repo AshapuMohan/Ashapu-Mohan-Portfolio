@@ -8,12 +8,17 @@ function HeroSection() {
         
         {/* Left: Image */}
         <div className="flex flex-col items-center gap-6">
-          <img
-            src="/Mohan1.jpg"
-            alt="Mohan"
-            className="w-[250px] rounded-xl transition-transform duration-300 hover:scale-105"
-          />
-        </div>
+        <img
+    src="/Mohan1.jpg"
+    alt="Mohan"
+    className="
+      transition-transform duration-300 hover:scale-105
+      w-[150px] rounded-full
+      md:w-[200px] md:rounded-full
+      lg:w-[250px] lg:rounded-xl
+    "
+  />
+</div>
 
         {/* Right: Text Content */}
         <div className="max-w-xl text-center sm:text-left">
