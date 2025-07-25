@@ -13,7 +13,7 @@ function HeroSection() {
     alt="Mohan"
     className="
       transition-transform duration-300 hover:scale-105
-      w-[150px] rounded-full
+      w-[100px] rounded-full
       md:w-[100px] md:rounded-full
       lg:w-[250px] lg:rounded-xl
     "
