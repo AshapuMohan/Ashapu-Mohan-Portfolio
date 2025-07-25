@@ -7,18 +7,13 @@ function HeroSection() {
       <div className="flex flex-col sm:flex-row items-center justify-center gap-20 p-10 min-h-screen bg-gradient-to-tr from-blue-50 to-indigo-50">
         
         {/* Left: Image */}
-        <div className="flex flex-col items-center gap-6">
-        <img
-    src="/Mohan1.jpg"
-    alt="Mohan"
-    className="
-      transition-transform duration-300 hover:scale-105
-      w-[100px] rounded-full
-      md:w-[100px] md:rounded-full
-      lg:w-[250px] lg:rounded-xl
-    "
-  />
-</div>
+        <div className="flex flex-col items-center gap-6">  
+      <img  
+        src="/Mohan1.jpg"  
+        alt="Mohan"  
+        className="w-[250px] rounded-xl transition-transform duration-300 hover:scale-105"  
+      />  
+    </div>
 
         {/* Right: Text Content */}
         <div className="max-w-xl text-center sm:text-left">
