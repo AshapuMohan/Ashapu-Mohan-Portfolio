@@ -45,6 +45,14 @@ const projects = [
     techStack: ['HTML', 'CSS', 'JavaScript', 'React', 'Express.js', 'MongoDB'],
     detailsLink: 'https://vehicle-aid-pi.vercel.app/',
     githubLink: 'https://github.com/AshapuMohan/VehicleAid',
+  },
+  {
+    title: 'EduMatrix Website',
+    image: '/edumatrix.png',
+    description: `a full-stack web application designed to streamline student learning, task submissions, and mentor interactions. This platform helps bridge the gap between students and mentors in project-based learning environments like internships and academic programs.`,
+    techStack: ['HTML', 'CSS', 'JavaScript', 'React', 'Express.js', 'MongoDB'],
+    detailsLink: 'https://edu-matrix-pied.vercel.app/stu-home',
+    githubLink: 'https://github.com/AshapuMohan/EduMatrix',
   }
 ];
 
