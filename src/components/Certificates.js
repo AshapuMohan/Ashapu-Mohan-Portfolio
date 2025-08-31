@@ -121,8 +121,8 @@ const Certificates = () => {
     ];
 
     return (
-        <div className=" bg-gradient-to-tr from-blue-50 to-indigo-50 min-h-screen sm:p-6 pb-20 pt-50">
-            <h1 className="text-3xl font-bold text-center mb-10">Certificates</h1>
+        <div className=" bg-gradient-to-tr from-blue-50 to-indigo-50 min-h-screen sm:p-6 pb-20 pt">
+            <h1 className="text-3xl font-bold text-center mt-30 mb-10">Certificates</h1>
 
             <Worker workerUrl={`https://unpkg.com/pdfjs-dist@3.11.174/build/pdf.worker.min.js`}>
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
@@ -178,4 +178,5 @@ const Certificates = () => {
 };
 
 export default Certificates;
+
 
