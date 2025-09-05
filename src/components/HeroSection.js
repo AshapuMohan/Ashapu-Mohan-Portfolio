@@ -47,22 +47,22 @@ function HeroSection() {
         </div>
       </div>
 
-      {/* GitHub Contribution Graph (centered, only on md and larger screens) */}
-      <h1 className="text-3xl text-center sm:text-4xl lg:text-5xl font-extrabold text-gray-900 tracking-tight mb-6">
-        GitHub Contribution Graph
-      </h1>
-      <p className="text-center text-base sm:text-lg text-gray-700 max-w-4xl mx-auto mb-6">
-        This graph highlights my daily contributions to open-source and personal projects on GitHub. 
-        Each square represents a day of activity — from writing code and committing changes to collaborating on repositories. 
-        Consistent contributions reflect my dedication to learning, building, and improving as a developer throughout the year.
-      </p>
-      <div className="hidden md:flex justify-center bg-gradient-to-tr from-blue-50 to-indigo-50 pb-10">
-        <img
-          src="/github-contrib (2).png"
-          alt="GitHub Contribution Streak"
-          className="w-full max-w-4xl rounded-xl shadow-md hover:scale-105 transition-transform duration-300"
-        />
-      </div>
+      // {/* GitHub Contribution Graph (centered, only on md and larger screens) */}
+      // <h1 className="text-3xl text-center sm:text-4xl lg:text-5xl font-extrabold text-gray-900 tracking-tight mb-6">
+      //   GitHub Contribution Graph
+      // </h1>
+      // <p className="text-center text-base sm:text-lg text-gray-700 max-w-4xl mx-auto mb-6">
+      //   This graph highlights my daily contributions to open-source and personal projects on GitHub. 
+      //   Each square represents a day of activity — from writing code and committing changes to collaborating on repositories. 
+      //   Consistent contributions reflect my dedication to learning, building, and improving as a developer throughout the year.
+      // </p>
+      // <div className="hidden md:flex justify-center bg-gradient-to-tr from-blue-50 to-indigo-50 pb-10">
+      //   <img
+      //     src="/github-contrib (2).png"
+      //     alt="GitHub Contribution Streak"
+      //     className="w-full max-w-4xl rounded-xl shadow-md hover:scale-105 transition-transform duration-300"
+      //   />
+      // </div>
 
     </div>
   );
