@@ -46,7 +46,7 @@ function HeroSection() {
                     </div>
                 </div>
             </div>
-            // {/* GitHub Contribution Graph (centered, only on md and larger screens) */}
+      {/* GitHub Contribution Graph (centered, only on md and larger screens) */}
       {/* // <h1 className="text-3xl text-center sm:text-4xl lg:text-5xl font-extrabold text-gray-900 tracking-tight mb-6">
       //   GitHub Contribution Graph
       // </h1>
