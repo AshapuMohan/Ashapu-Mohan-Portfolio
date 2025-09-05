@@ -8,12 +8,12 @@ function HeroSection() {
         
         {/* Left: Image */}
         <div className="flex flex-col items-center gap-6">  
-      <img  
-        src="/Mohan1.jpg"  
-        alt="Mohan"  
-        className="w-[250px] rounded-xl transition-transform duration-300 hover:scale-105"  
-      />  
-    </div>
+          <img  
+            src="/Mohan1.jpg"  
+            alt="Mohan"  
+            className="w-[250px] rounded-xl transition-transform duration-300 hover:scale-105"  
+          />  
+        </div>
 
         {/* Right: Text Content */}
         <div className="max-w-xl text-center sm:text-left">
@@ -27,23 +27,23 @@ function HeroSection() {
           <h4 className="mb-8 text-lg sm:text-2xl">
             Aspiring Fullstack Web Developer | Passionate about blending web development and open source to create, innovate, and build amazing digital experiences! 🚀
           </h4>
-          <a
-            href="/contact"
-            className="inline-block bg-blue-500 text-white font-bold px-6 py-3 rounded-2xl transition-transform duration-300 hover:scale-105"
-          >
+            <a
+              href="/contact"
+              className="inline-block bg-blue-500 text-white font-bold px-6 py-3 rounded-2xl transition-transform duration-300 hover:scale-105"
+            >
             Contact Me <i className="fa-solid fa-arrow-right"></i>
-          </a>
-          <div className="flex justify-center sm:justify-start items-center gap-5 mt-4">
-            <a href="https://www.linkedin.com/in/mohan-ashapu-724aba258/">
-              <i className="fa-brands fa-linkedin fa-lg transition-transform duration-300 hover:scale-130"></i>
             </a>
-            <a href="mailto:ashapumohan123@gmail.com">
-              <i className="fa-solid fa-envelope fa-lg transition-transform duration-300 hover:scale-130"></i>
-            </a>
-            <a href="https://wa.me/917989909756?text=Hi%2C%20Ashapu%20Mohan">
-              <i className="fa-brands fa-whatsapp fa-lg transition-transform duration-300 hover:scale-130"></i>
-            </a>
-          </div>
+            <div className="flex justify-center sm:justify-start items-center gap-5 mt-4">
+              <a href="https://www.linkedin.com/in/mohan-ashapu-724aba258/">
+                <i className="fa-brands fa-linkedin fa-lg transition-transform duration-300 hover:scale-130"></i>
+              </a>
+              <a href="mailto:ashapumohan123@gmail.com">
+                <i className="fa-solid fa-envelope fa-lg transition-transform duration-300 hover:scale-130"></i>
+              </a>
+              <a href="https://wa.me/917989909756?text=Hi%2C%20Ashapu%20Mohan">
+                <i className="fa-brands fa-whatsapp fa-lg transition-transform duration-300 hover:scale-130"></i>
+              </a>
+            </div>
         </div>
       </div>
 
