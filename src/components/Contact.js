@@ -67,7 +67,7 @@ const Contact = () => {
           </p>
           <div className="flex flex-wrap justify-center gap-5">
             <a
-              href="/22331A1209-Resume.pdf"
+              href="/Ashapu Mohan-Resume.pdf"
               className="flex items-center gap-3 bg-blue-600 text-white px-6 py-3 rounded-xl font-semibold shadow-lg hover:bg-blue-700 transition"
               download
             >
