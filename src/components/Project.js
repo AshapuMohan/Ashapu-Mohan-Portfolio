@@ -142,7 +142,7 @@ const Project = () => {
               </ul>
               <ul className="flex flex-wrap gap-2 mt-4">
                 {project.techStack.map((tech, i) => (
-                  <li key={i} className="bg-gray-100 text-gray-800 text-xs px-2 py-1 rounded">
+                  <li key={i} className="bg-gray-100 text-gray-800 text-xs px-2 py-2 rounded-full">
                     {tech}
                   </li>
                 ))}
