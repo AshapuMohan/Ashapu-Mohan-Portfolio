@@ -109,58 +109,80 @@ const projects = [
 const Project = () => {
   return (
     <div className="flex flex-col items-center pt-24 px-4 sm:px-6 lg:px-10 mb-20">
+      {/* Header */}
       <div className="p-4 bg-blue-100 text-blue-600 rounded-full mb-4">
         <i className="fa-solid fa-diagram-project text-xl"></i>
       </div>
-      <h2 className="text-3xl sm:text-4xl lg:text-5xl text-center font-extrabold text-gray-900 tracking-tight pb-5">My Projects</h2>
-      <p className="mt-6 mb-15 text-base sm:text-lg text-gray-700 max-w-2xl mx-auto">
+      <h2 className="text-3xl sm:text-4xl lg:text-5xl text-center font-extrabold text-gray-900 tracking-tight pb-5">
+        My Projects
+      </h2>
+      <p className="mt-6 mb-15 text-base sm:text-lg text-gray-700 max-w-2xl mx-auto text-center">
         Browse through my portfolio of projects, showcasing my skills in web development, design, and problem-solving.
       </p>
 
-      <div className="grid items-center justify-center px-70 w-full gap-30">
+      {/* Responsive Grid */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 w-full max-w-7xl mt-10">
         {projects.map((project, index) => (
           <div
             key={index}
-            className="relative bg-white  border-gray-200 rounded-xl hover:shadow-lg transition duration-300 p-4 group"
+            className="relative bg-white border border-gray-200 rounded-xl hover:shadow-lg transition duration-300 p-4 flex flex-col"
           >
+            {/* Badge */}
             <span className="absolute top-4 left-4 bg-blue-600 text-white text-xs px-3 py-1 rounded-full z-10 shadow">
               Featured
             </span>
+
+            {/* Project Image */}
             <img
               src={project.image}
               alt={project.title}
-              className="w-full h-full object-cover rounded-md"
+              className="w-full h-52 sm:h-60 lg:h-48 object-cover rounded-md"
             />
-            <div className="pt-4 px-8">
-              <h3 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 tracking-tight pb-5">{project.title}</h3>
-              <p className="text-gray-700 text-lg">{project.description}</p>
-              <p className="mt-2 text-lg font-bold text-gray-800">Key Features:</p>
-              <ul className="list-disc list-inside text-gray-600 text-md">
+
+            {/* Project Content */}
+            <div className="pt-4 flex flex-col flex-1">
+              <h3 className="text-xl sm:text-2xl font-bold text-gray-900 tracking-tight pb-3">
+                {project.title}
+              </h3>
+              <p className="text-gray-700 text-sm sm:text-base flex-1">
+                {project.description}
+              </p>
+
+              {/* Key Features */}
+              <p className="mt-3 text-base font-bold text-gray-800">Key Features:</p>
+              <ul className="list-disc list-inside text-gray-600 text-sm sm:text-base">
                 {project.keyfeatures.map((feature, i) => (
-                    <li key={i}>{feature}</li>
+                  <li key={i}>{feature}</li>
                 ))}
               </ul>
-              <ul className="flex flex-wrap gap-2 mt-4">
+
+              {/* Tech Stack */}
+              <ul className="flex flex-wrap gap-2 mt-3">
                 {project.techStack.map((tech, i) => (
-                  <li key={i} className="bg-gray-100 text-gray-800 text-xs px-2 py-2 rounded-full">
+                  <li
+                    key={i}
+                    className="bg-gray-100 text-gray-800 text-xs px-2 py-1 rounded-full"
+                  >
                     {tech}
                   </li>
                 ))}
               </ul>
+
+              {/* Links */}
               <div className="flex items-center mt-4">
                 <a
                   href={project.detailsLink}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="px-3 bg-black text-white py-1 rounded-full text-sm font-medium transition"
+                  className="px-3 bg-black text-white py-1 rounded-full text-sm font-medium transition hover:bg-gray-800"
                 >
-                  {project.detailsLink} <i class="fa-solid fa-up-right-from-square"></i>
+                  Live <i className="fa-solid fa-up-right-from-square ml-1"></i>
                 </a>
                 <a
                   href={project.githubLink}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="ml-4 text-black hover:text-black transition"
+                  className="ml-4 text-black hover:text-gray-700 transition"
                 >
                   <i className="fa-brands fa-github text-2xl"></i>
                 </a>
