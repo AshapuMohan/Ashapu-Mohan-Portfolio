@@ -35,13 +35,13 @@ function HeroSection() {
                     </a>
                     <div className="flex justify-center sm:justify-start items-center gap-5 mt-4">
                         <a href="https://www.linkedin.com/in/mohan-ashapu-724aba258/">
-                            <i className="fa-brands fa-linkedin fa-lg transition-transform duration-300 hover:scale-130"></i>
+                            <i className="fa-brands fa-linkedin fa-lg p-2 border border-gray-500"></i>
                         </a>
                         <a href="mailto:ashapumohan123@gmail.com">
-                            <i className="fa-solid fa-envelope fa-lg transition-transform duration-300 hover:scale-130"></i>
+                            <i className="fa-solid fa-envelope fa-lg p-2 border border-gray-500"></i>
                         </a>
                         <a href="https://wa.me/917989909756?text=Hi%2C%20Ashapu%20Mohan">
-                            <i className="fa-brands fa-whatsapp fa-lg transition-transform duration-300 hover:scale-130"></i>
+                            <i className="fa-brands fa-whatsapp fa-lg p-2 border border-gray-500"></i>
                         </a>
                     </div>
                 </div>
