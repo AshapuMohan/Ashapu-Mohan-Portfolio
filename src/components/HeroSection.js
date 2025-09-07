@@ -29,7 +29,7 @@ function HeroSection() {
                     </h4>
                     <a
                         href="/contact"
-                        className="inline-block bg-blue-500 text-white font-bold px-6 py-3 rounded-2xl transition-transform duration-300 hover:scale-105"
+                        className="inline-block bg-blue-500 text-white font-bold px-4 py-2 rounded-2xl transition-transform duration-300 hover:scale-105"
                     >
                         Contact Me <i className="fa-solid fa-arrow-right"></i>
                     </a>
