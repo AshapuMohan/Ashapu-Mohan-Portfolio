@@ -120,8 +120,8 @@ const Project = () => {
         Browse through my portfolio of projects, showcasing my skills in web development, design, and problem-solving.
       </p>
 
-      {/* Responsive Grid */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 w-full max-w-7xl mt-10">
+      {/* Single Column Grid */}
+      <div className="grid grid-cols-1 gap-10 w-full max-w-3xl">
         {projects.map((project, index) => (
           <div
             key={index}
@@ -136,21 +136,21 @@ const Project = () => {
             <img
               src={project.image}
               alt={project.title}
-              className="w-full h-52 sm:h-60 lg:h-48 object-cover rounded-md"
+              className="w-full h-64 object-cover rounded-md mb-4"
             />
 
             {/* Project Content */}
-            <div className="pt-4 flex flex-col flex-1">
-              <h3 className="text-xl sm:text-2xl font-bold text-gray-900 tracking-tight pb-3">
+            <div className="flex flex-col flex-1">
+              <h3 className="text-2xl font-bold text-gray-900 tracking-tight pb-3">
                 {project.title}
               </h3>
-              <p className="text-gray-700 text-sm sm:text-base flex-1">
+              <p className="text-gray-700 text-base flex-1">
                 {project.description}
               </p>
 
               {/* Key Features */}
               <p className="mt-3 text-base font-bold text-gray-800">Key Features:</p>
-              <ul className="list-disc list-inside text-gray-600 text-sm sm:text-base">
+              <ul className="list-disc list-inside text-gray-600 text-sm">
                 {project.keyfeatures.map((feature, i) => (
                   <li key={i}>{feature}</li>
                 ))}
@@ -194,5 +194,6 @@ const Project = () => {
     </div>
   );
 };
+
 
 export default Project;
