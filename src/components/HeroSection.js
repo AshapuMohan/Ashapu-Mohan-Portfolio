@@ -50,9 +50,9 @@ function HeroSection() {
                             <i className="fa-brands fa-linkedin fa-xl px-2 py-4  hover:bg-gray-300 hover:border hover:border-gray-200 hover:rounded"></i>
                         </a>
                         <a href="https://x.com/MohanAshapu">
-                            <i className="fa-brands fa-twitter fa-xl px-2 py-4 hover:border hover:border-gray-200 hover:bg-gray-300 hover:rounded"></i>
+                            <i className="fa-brands fa-xa-twitter fa-xl px-2 py-4 hover:border hover:border-gray-200 hover:bg-gray-300 hover:rounded"></i>
                         </a>
-                        <a href="https://www.facebook.com/profile.php?id=100084252888068">
+                        {/*<a href="https://www.facebook.com/profile.php?id=100084252888068">
                             <i className="fa-brands fa-facebook fa-xl px-2 py-4 hover:bg-gray-300 hover:border hover:border-gray-200 hover:rounded"></i>
                         </a>
                         <a href="https://wa.me/917989909756?text=Hi%2C%20Ashapu%20Mohan">
@@ -60,7 +60,7 @@ function HeroSection() {
                         </a>
                         <a href="https://www.instagram.com/mr_mohan__7781/">
                             <i className="fa-brands fa-instagram fa-xl px-2 py-4 hover:border hover:border-gray-200 hover:bg-gray-300 hover:rounded"></i>
-                        </a>
+                        </a> */}
                     </div>
                 </div>
             </div>
