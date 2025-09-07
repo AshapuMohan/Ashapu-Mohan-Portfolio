@@ -136,7 +136,7 @@ const Project = () => {
             <img
               src={project.image}
               alt={project.title}
-              className="w-full h-64 object-cover rounded-md mb-4"
+              className="w-full h-full object-cover rounded-md mb-4"
             />
 
             {/* Project Content */}
