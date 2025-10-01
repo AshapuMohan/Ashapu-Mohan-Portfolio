@@ -9,7 +9,7 @@ function HeroSection() {
                 {/* Left: Image */}
                 <div className="flex flex-col items-center gap-6">
                     <img
-                        src="/Mohan1.jpg"
+                        src="/Mohan-suit.png"
                         alt="Mohan"
                         className="w-[250px] rounded-xl transition-transform duration-300 hover:scale-105"
                     />
