@@ -8,7 +8,6 @@ export default function HeroSection() {
   const navigate = useNavigate();
 
   const handleNavClick = (id) => {
-    setMenuOpen(false);
     if (location.pathname !== '/') {
       navigate('/');
       setTimeout(() => {
