@@ -19,7 +19,7 @@ export default function HeroSection() {
             <img
               src="/Mohan-suite1.png"
               alt="Mohan"
-              className="w-[250px] sm:w-[100px] lg:w-[250px] rounded-2xl object-cover pb-3"
+              className="w-[250px] sm:w-[100px] lg:w-[250px] rounded-2xl object-cover"
             />
           </div>
         </motion.div>
