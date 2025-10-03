@@ -1,14 +1,32 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { Github, Linkedin, Mail, Twitter, Phone } from "lucide-react";
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 
 export default function HeroSection() {
+  const location = useLocation();
+  const navigate = useNavigate();
+
+  const handleNavClick = (id) => {
+    setMenuOpen(false);
+    if (location.pathname !== '/') {
+      navigate('/');
+      setTimeout(() => {
+        const element = document.getElementById(id);
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }
+      }, 100);
+    } else {
+      const element = document.getElementById(id);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  };
   return (
     <section className="bg-gradient-to-tr from-blue-50 to-indigo-50 relative min-h-screen flex flex-col justify-center items-center overflow-hidden pb-5">
-      {/* Content */}
       <div className="relative z-10 items-center flex flex-col justify-center text-center max-w-3xl px-6">
-        
-        {/* Floating Profile Image */}
         <motion.div
           initial={{ opacity: 0, scale: 0.95 }}
           animate={{ opacity: 1, scale: 1 }}
@@ -24,7 +42,6 @@ export default function HeroSection() {
           </div>
         </motion.div>
 
-        {/* Artistic tagline */}
         <motion.h1
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
@@ -41,8 +58,6 @@ export default function HeroSection() {
           with Code & Design
         </motion.h1>
 
-
-        {/* Subtitle */}
         <motion.p
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
@@ -54,7 +69,6 @@ export default function HeroSection() {
           <span className="italic text-violet-600">beautiful, fast, and human.</span>
         </motion.p>
 
-        {/* CTA Buttons */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -62,22 +76,21 @@ export default function HeroSection() {
           className="mt-10 flex justify-center gap-6"
         >
           <a
-            href="#contact"
+            onClick={() => handleNavClick('contact')}
             className="px-8 py-3 rounded-full font-semibold bg-black text-white hover:scale-105 transition-transform shadow-xl"
           >
             Let’s Talk
           </a>
-          <a
-            href="https://ashapumohanportfolio.netlify.app/projects"
+          <Link
+            to="/projects"
             target="_blank"
             rel="noreferrer"
             className="px-8 py-3 rounded-full font-semibold border border-gray-300 text-gray-700 hover:bg-gray-50 transition shadow-sm"
           >
             My Work
-          </a>
+          </Link>
         </motion.div>
 
-        {/* Social Icons */}
         <motion.div
           className="flex gap-6 mt-6"
           initial={{ opacity: 0 }}
