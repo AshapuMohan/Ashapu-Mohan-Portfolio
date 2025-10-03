@@ -1,109 +1,110 @@
-import React from 'react';
+import React from "react";
+import { motion } from "framer-motion";
+import { Github, Linkedin, Mail, Twitter, Phone } from "lucide-react";
 
-function HeroSection() {
-    const TEXT_SIZE = 'text-3xl sm:text-2xl lg:text-4xl xl:text-[5rem]';
-  const BASE_CHAR_STYLE = `font-extrabold tracking-tight leading-none ${TEXT_SIZE}`;
-  const O_STYLE = 'inline-block bg-black rounded-full aspect-square p-0 m-0';
-  const O_SIZE = 'w-[1.5rem] h-[1.5rem] sm:w-[2rem] sm:h-[2rem] lg:w-[3.8rem] lg:h-[3.8rem] xl:w-[4.3rem] xl:h-[4.3rem]';
-  const MOHAN_CONTAINER_STYLE = 'flex items-center justify-center space-x-0 mx-auto mt-4';
-    return (
-        <div className='bg-gradient-to-tr from-blue-50 to-indigo-50'>
-            {/* Top section: image and text */}
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-20 p-10 min-h-screen bg-gradient-to-tr from-blue-50 to-indigo-50">
+export default function HeroSection() {
+  return (
+    <section className="relative min-h-screen flex flex-col justify-center items-center bg-white overflow-hidden pb-5">
+      {/* Background artistic blobs */}
+      <div className="absolute -top-40 -left-40 w-[500px] h-[500px] bg-gradient-to-tr from-violet-500 via-fuchsia-400 to-pink-400 rounded-full blur-[140px] opacity-30"></div>
+      <div className="absolute bottom-[-200px] right-[-200px] w-[600px] h-[600px] bg-gradient-to-tr from-cyan-400 via-blue-500 to-indigo-600 rounded-full blur-[140px] opacity-30"></div>
 
-                {/* Left: Image */}
-                <div className="flex flex-col items-center gap-6">
-                    <img
-                        src="/Mohan-suite1.png"
-                        alt="Mohan"
-                        className="w-[250px] rounded-xl transition-transform duration-300 hover:scale-105"
-                    />
-                </div>
+      {/* Content */}
+      <div className="relative z-10 items-center flex flex-col justify-center text-center max-w-3xl px-6">
+        
+        {/* Floating Profile Image */}
+        <motion.div
+          initial={{ opacity: 0, scale: 0.95 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ delay: 0.8, duration: 1 }}
+          className="relative mt-16"
+        >
+          <div className="relative">
+            <img
+              src="/Mohan-suite1.png"
+              alt="Mohan"
+              className="w-[250px] sm:w-[100px] lg:w-[250px] rounded-2xl object-cover pb-3"
+            />
+          </div>
+        </motion.div>
 
-                {/* Right: Text Content */}
-                <div className="max-w-xl text-center sm:text-left">
-                    {/* <h1 className="mb-5 text-4xl sm:text-5xl font-bold">
-                        Welcome to{' '}
-                        <span className="relative inline-block before:absolute before:-inset-1 before:block before:-skew-y-3 before:bg-blue-500 transition-transform duration-300 hover:scale-105">
-                            <span className="relative text-white dark:text-gray-950 p-1">Mohan's</span>
-                        </span>{' '}
-                        Portfolio
-                    </h1> */}
-                    <h1 className="text-3xl sm:text-4xl font-bold text-gray-800">Hi,This is</h1>
-                    <div className={MOHAN_CONTAINER_STYLE}>
-                      {/* M */}
-                      <span className={BASE_CHAR_STYLE}>M</span>
-                      
-                      {/* O (Styled as a circular block) */}
-                      <span className={`${O_STYLE} ${O_SIZE} mb-1`} aria-label="O"></span>
-                      
-                      {/* H */}
-                      <span className={BASE_CHAR_STYLE}>H</span>
-                      
-                      {/* A */}
-                      <span className={BASE_CHAR_STYLE}>A</span>
-                      
-                      {/* N */}
-                      <span className={BASE_CHAR_STYLE}>N</span>
-                    </div>
-                    <h4 className="mb-8 text-lg sm:text-2xl">
-                        Aspiring Fullstack Web Developer | Passionate about blending web development and open source to create, innovate, and build amazing digital experiences! 🚀
-                    </h4>
-                    <a
-                        href="/contact"
-                        className="inline-block bg-blue-500 text-white font-bold px-4 py-2 rounded-2xl transition-transform duration-300 hover:scale-105"
-                    >
-                        Contact Me <i className="fa-solid fa-arrow-right"></i>
-                    </a>
-                    <div className="flex justify-center sm:justify-start items-center gap-5 mt-6 flex-wrap">
-                        <a href='https://ashapumohanportfolio.netlify.app/'>
-                            <i className="fa-solid fa-globe fa-xl px-2 py-4 hover:bg-gray-300 hover:border hover:border-gray-200 hover:rounded"></i>
-                        </a>
-                        <a href="mailto:ashapumohan123@gmail.com">
-                            <i className="fa-solid fa-envelope fa-xl px-2 py-4 hover:border hover:border-gray-200 hover:bg-gray-300 hover:rounded"></i>
-                        </a>
-                        <a href='tel:+917989909756'>
-                            <i className="fa-solid fa-phone fa-xl px-2 py-4 hover:bg-gray-300 hover:border hover:border-gray-200 hover:rounded"></i>
-                        </a>
-                        <a href="https://github.com/AshapuMohan">
-                            <i className="fa-brands fa-github fa-xl px-2 py-4 hover:border hover:border-gray-200 hover:bg-gray-300 hover:rounded"></i>
-                        </a>
-                        <a href="https://www.linkedin.com/in/mohan-ashapu-724aba258/">
-                            <i className="fa-brands fa-linkedin fa-xl px-2 py-4  hover:bg-gray-300 hover:border hover:border-gray-200 hover:rounded"></i>
-                        </a>
-                        <a href="https://x.com/MohanAshapu">
-                            <i className="fa-brands fa-xa-twitter fa-xl px-2 py-4 hover:border hover:border-gray-200 hover:bg-gray-300 hover:rounded"></i>
-                        </a>
-                        {/*<a href="https://www.facebook.com/profile.php?id=100084252888068">
-                            <i className="fa-brands fa-facebook fa-xl px-2 py-4 hover:bg-gray-300 hover:border hover:border-gray-200 hover:rounded"></i>
-                        </a>
-                        <a href="https://wa.me/917989909756?text=Hi%2C%20Ashapu%20Mohan">
-                            <i className="fa-brands fa-whatsapp fa-xl px-2 py-4 hover:border hover:border-gray-200 hover:bg-gray-300 hover:rounded"></i>
-                        </a>
-                        <a href="https://www.instagram.com/mr_mohan__7781/">
-                            <i className="fa-brands fa-instagram fa-xl px-2 py-4 hover:border hover:border-gray-200 hover:bg-gray-300 hover:rounded"></i>
-                        </a> */}
-                    </div>
-                </div>
-            </div>
-      {/* GitHub Contribution Graph (centered, only on md and larger screens) */}
-      {/* // <h1 className="text-3xl text-center sm:text-4xl lg:text-5xl font-extrabold text-gray-900 tracking-tight mb-6">
-      //   GitHub Contribution Graph
-      // </h1>
-      // <p className="text-center text-base sm:text-lg text-gray-700 max-w-4xl mx-auto mb-6">
-      //   This graph highlights my daily contributions to open-source and personal projects on GitHub. 
-      //   Each square represents a day of activity — from writing code and committing changes to collaborating on repositories. 
-      //   Consistent contributions reflect my dedication to learning, building, and improving as a developer throughout the year.
-      // </p>
-      // <div className="hidden md:flex justify-center bg-gradient-to-tr from-blue-50 to-indigo-50 pb-10">
-      //   <img
-      //     src="/github-contrib (2).png"
-      //     alt="GitHub Contribution Streak"
-      //     className="w-full max-w-4xl rounded-xl shadow-md hover:scale-105 transition-transform duration-300"
-      //   />
-      // </div> */}
-        </div>
-    );
+        {/* Artistic tagline */}
+        <motion.h1
+          initial={{ opacity: 0, y: 40 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1 }}
+          className="text-5xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight leading-tight"
+        >
+          Crafting{" "}
+          <span className="bg-clip-text text-transparent bg-gradient-to-r from-slate-600 via-slate-600 to-slate-600">
+          Digital Experiences
+        </span>
+
+
+        {" "}
+          with Code & Design
+        </motion.h1>
+
+
+        {/* Subtitle */}
+        <motion.p
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.3, duration: 1 }}
+          className="mt-6 text-lg sm:text-xl text-gray-600 max-w-2xl mx-auto"
+        >
+          I’m <span className="font-semibold text-gray-900">Ashapu Mohan</span>, 
+          a Fullstack Developer blending engineering & design to build interfaces that feel{" "}
+          <span className="italic text-violet-600">beautiful, fast, and human.</span>
+        </motion.p>
+
+        {/* CTA Buttons */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.6, duration: 1 }}
+          className="mt-10 flex justify-center gap-6"
+        >
+          <a
+            href="#contact"
+            className="px-8 py-3 rounded-full font-semibold bg-black text-white hover:scale-105 transition-transform shadow-xl"
+          >
+            Let’s Talk
+          </a>
+          <a
+            href="https://ashapumohanportfolio.netlify.app/projects"
+            target="_blank"
+            rel="noreferrer"
+            className="px-8 py-3 rounded-full font-semibold border border-gray-300 text-gray-700 hover:bg-gray-50 transition shadow-sm"
+          >
+            My Work
+          </a>
+        </motion.div>
+
+        {/* Social Icons */}
+        <motion.div
+          className="flex gap-6 mt-6"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.5, duration: 0.8 }}
+        >
+          <a href="https://github.com/AshapuMohan" className="text-gray-700 hover:text-violet-600 transition">
+            <Github size={28} />
+          </a>
+          <a href="https://www.linkedin.com/in/mohan-ashapu-724aba258/" className="text-gray-700 hover:text-violet-600 transition">
+            <Linkedin size={28} />
+          </a>
+          <a href="mailto:ashapumohan123@gmail.com" className="text-gray-700 hover:text-violet-600 transition">
+            <Mail size={28} />
+          </a>
+          <a href="tel:+917989909756" className="text-gray-700 hover:text-violet-600 transition">
+            <Phone size={28} />
+          </a>
+          <a href="https://x.com/MohanAshapu" className="text-gray-700 hover:text-violet-600 transition">
+            <Twitter size={28} />
+          </a>
+        </motion.div>
+      </div>
+    </section>
+  );
 }
-
-export default HeroSection;
