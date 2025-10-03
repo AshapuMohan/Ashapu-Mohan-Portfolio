@@ -1,9 +1,9 @@
 import React from 'react';
 
 function HeroSection() {
-    const TEXT_SIZE = 'text-7xl sm:text-8xl lg:text-9xl xl:text-[10rem]';
+    const TEXT_SIZE = 'text-5xl sm:text-4xl lg:text-6xl xl:text-[10rem]';
   const BASE_CHAR_STYLE = `font-extrabold tracking-tight leading-none ${TEXT_SIZE}`;
-  const O_STYLE = 'inline-block bg-white rounded-full aspect-square p-0 m-0';
+  const O_STYLE = 'inline-block bg-black rounded-full aspect-square p-0 m-0';
   const O_SIZE = 'w-[4.2rem] h-[4.2rem] sm:w-[5.2rem] sm:h-[5.2rem] lg:w-[6.2rem] lg:h-[6.2rem] xl:w-[7.2rem] xl:h-[7.2rem]';
   const MOHAN_CONTAINER_STYLE = 'flex items-center space-x-0 mx-auto mt-4';
     return (
