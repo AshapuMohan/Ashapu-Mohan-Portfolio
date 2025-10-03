@@ -60,7 +60,7 @@ const Contact = () => {
           <div className="inline-flex items-center justify-center bg-blue-100 text-blue-600 rounded-full w-16 h-16 mx-auto mb-6 text-4xl">
             <FaGraduationCap />
           </div>
-          <h2 className="text-4xl font-extrabold mb-4 text-gray-900">Hire Me</h2>
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-gray-900 tracking-tight">Hire Me</h2>
           <p className="max-w-3xl mx-auto text-gray-700 text-lg leading-relaxed mb-6">
             I'm available for full-time positions, internships, and freelance projects. Let's
             create something amazing together!
