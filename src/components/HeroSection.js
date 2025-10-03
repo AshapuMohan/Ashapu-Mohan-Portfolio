@@ -74,12 +74,12 @@ export default function HeroSection() {
           transition={{ delay: 0.6, duration: 1 }}
           className="mt-10 flex justify-center gap-6"
         >
-          <a
+          <span
             onClick={() => handleNavClick('contact')}
             className="px-8 py-3 rounded-full font-semibold bg-black text-white hover:scale-105 transition-transform shadow-xl"
           >
             Let’s Talk
-          </a>
+          </span>
           <Link
             to="/projects"
             target="_blank"
