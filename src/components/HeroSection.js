@@ -29,22 +29,23 @@ function HeroSection() {
                         </span>{' '}
                         Portfolio
                     </h1> */}
-        <div className={MOHAN_CONTAINER_STYLE}>
-          {/* M */}
-          <span className={BASE_CHAR_STYLE}>M</span>
-          
-          {/* O (Styled as a circular block) */}
-          <span className={`${O_STYLE} ${O_SIZE} mb-1`} aria-label="O"></span>
-          
-          {/* H */}
-          <span className={BASE_CHAR_STYLE}>H</span>
-          
-          {/* A */}
-          <span className={BASE_CHAR_STYLE}>A</span>
-          
-          {/* N */}
-          <span className={BASE_CHAR_STYLE}>N</span>
-        </div>
+                    <h1 className="text-3xl sm:text-4xl font-bold text-gray-800">Hi, this is</h1>
+                    <div className={MOHAN_CONTAINER_STYLE}>
+                      {/* M */}
+                      <span className={BASE_CHAR_STYLE}>M</span>
+                      
+                      {/* O (Styled as a circular block) */}
+                      <span className={`${O_STYLE} ${O_SIZE} mb-1`} aria-label="O"></span>
+                      
+                      {/* H */}
+                      <span className={BASE_CHAR_STYLE}>H</span>
+                      
+                      {/* A */}
+                      <span className={BASE_CHAR_STYLE}>A</span>
+                      
+                      {/* N */}
+                      <span className={BASE_CHAR_STYLE}>N</span>
+                    </div>
                     <h4 className="mb-8 text-lg sm:text-2xl">
                         Aspiring Fullstack Web Developer | Passionate about blending web development and open source to create, innovate, and build amazing digital experiences! 🚀
                     </h4>
