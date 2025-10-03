@@ -29,7 +29,6 @@ function HeroSection() {
                         </span>{' '}
                         Portfolio
                     </h1> */}
-                    <main className="flex-grow flex items-center justify-center w-full my-4">
         <div className={MOHAN_CONTAINER_STYLE}>
           {/* M */}
           <span className={BASE_CHAR_STYLE}>M</span>
@@ -46,7 +45,6 @@ function HeroSection() {
           {/* N */}
           <span className={BASE_CHAR_STYLE}>N</span>
         </div>
-      </main>
                     <h4 className="mb-8 text-lg sm:text-2xl">
                         Aspiring Fullstack Web Developer | Passionate about blending web development and open source to create, innovate, and build amazing digital experiences! 🚀
                     </h4>
