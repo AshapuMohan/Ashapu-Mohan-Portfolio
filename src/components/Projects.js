@@ -184,7 +184,7 @@ const Projects = () => {
       <div className="p-4 bg-blue-100 text-blue-600 rounded-full mb-4">
         <i className="fa-solid fa-diagram-project text-xl"></i>
       </div>
-      <h2 className="text-4xl font-bold text-center text-black mb-2">My Projects</h2>
+      <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-gray-900 tracking-tight mb-2">My Projects</h2>
       <p className="text-center text-gray-700 max-w-xl mb-10">
         Browse through my portfolio of projects, showcasing my skills in web development, design, and problem-solving.
       </p>
