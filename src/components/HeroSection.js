@@ -4,7 +4,7 @@ function HeroSection() {
     const TEXT_SIZE = 'text-3xl sm:text-2xl lg:text-4xl xl:text-[5rem]';
   const BASE_CHAR_STYLE = `font-extrabold tracking-tight leading-none ${TEXT_SIZE}`;
   const O_STYLE = 'inline-block bg-black rounded-full aspect-square p-0 m-0';
-  const O_SIZE = 'w-[1.5rem] h-[1.5rem] sm:w-[2rem] sm:h-[2rem] lg:w-[4rem] lg:h-[4rem] xl:w-[4.3rem] xl:h-[4.3rem]';
+  const O_SIZE = 'w-[1.5rem] h-[1.5rem] sm:w-[2rem] sm:h-[2rem] lg:w-[3.8rem] lg:h-[3.8rem] xl:w-[4.3rem] xl:h-[4.3rem]';
   const MOHAN_CONTAINER_STYLE = 'flex items-center space-x-0 mx-auto mt-4';
     return (
         <div className='bg-gradient-to-tr from-blue-50 to-indigo-50'>
