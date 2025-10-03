@@ -1,6 +1,11 @@
 import React from 'react';
 
 function HeroSection() {
+    const TEXT_SIZE = 'text-7xl sm:text-8xl lg:text-9xl xl:text-[10rem]';
+  const BASE_CHAR_STYLE = `font-extrabold tracking-tight leading-none ${TEXT_SIZE}`;
+  const O_STYLE = 'inline-block bg-white rounded-full aspect-square p-0 m-0';
+  const O_SIZE = 'w-[4.2rem] h-[4.2rem] sm:w-[5.2rem] sm:h-[5.2rem] lg:w-[6.2rem] lg:h-[6.2rem] xl:w-[7.2rem] xl:h-[7.2rem]';
+  const MOHAN_CONTAINER_STYLE = 'flex items-center space-x-0 mx-auto mt-4';
     return (
         <div className='bg-gradient-to-tr from-blue-50 to-indigo-50'>
             {/* Top section: image and text */}
@@ -17,13 +22,31 @@ function HeroSection() {
 
                 {/* Right: Text Content */}
                 <div className="max-w-xl text-center sm:text-left">
-                    <h1 className="mb-5 text-4xl sm:text-5xl font-bold">
+                    {/* <h1 className="mb-5 text-4xl sm:text-5xl font-bold">
                         Welcome to{' '}
                         <span className="relative inline-block before:absolute before:-inset-1 before:block before:-skew-y-3 before:bg-blue-500 transition-transform duration-300 hover:scale-105">
                             <span className="relative text-white dark:text-gray-950 p-1">Mohan's</span>
                         </span>{' '}
                         Portfolio
-                    </h1>
+                    </h1> */}
+                    <main className="flex-grow flex items-center justify-center w-full my-4">
+        <div className={MOHAN_CONTAINER_STYLE}>
+          {/* M */}
+          <span className={BASE_CHAR_STYLE}>M</span>
+          
+          {/* O (Styled as a circular block) */}
+          <span className={`${O_STYLE} ${O_SIZE} mb-1`} aria-label="O"></span>
+          
+          {/* H */}
+          <span className={BASE_CHAR_STYLE}>H</span>
+          
+          {/* A */}
+          <span className={BASE_CHAR_STYLE}>A</span>
+          
+          {/* N */}
+          <span className={BASE_CHAR_STYLE}>N</span>
+        </div>
+      </main>
                     <h4 className="mb-8 text-lg sm:text-2xl">
                         Aspiring Fullstack Web Developer | Passionate about blending web development and open source to create, innovate, and build amazing digital experiences! 🚀
                     </h4>
