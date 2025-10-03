@@ -4,11 +4,7 @@ import { Github, Linkedin, Mail, Twitter, Phone } from "lucide-react";
 
 export default function HeroSection() {
   return (
-    <section className="relative min-h-screen flex flex-col justify-center items-center bg-white overflow-hidden pb-5">
-      {/* Background artistic blobs */}
-      <div className="absolute -top-40 -left-40 w-[500px] h-[500px] bg-gradient-to-tr from-violet-500 via-fuchsia-400 to-pink-400 rounded-full blur-[140px] opacity-30"></div>
-      <div className="absolute bottom-[-200px] right-[-200px] w-[600px] h-[600px] bg-gradient-to-tr from-cyan-400 via-blue-500 to-indigo-600 rounded-full blur-[140px] opacity-30"></div>
-
+    <section className="bg-gradient-to-tr from-blue-50 to-indigo-50 relative min-h-screen flex flex-col justify-center items-center overflow-hidden pb-5">
       {/* Content */}
       <div className="relative z-10 items-center flex flex-col justify-center text-center max-w-3xl px-6">
         
