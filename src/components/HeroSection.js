@@ -5,7 +5,7 @@ function HeroSection() {
   const BASE_CHAR_STYLE = `font-extrabold tracking-tight leading-none ${TEXT_SIZE}`;
   const O_STYLE = 'inline-block bg-black rounded-full aspect-square p-0 m-0';
   const O_SIZE = 'w-[1.5rem] h-[1.5rem] sm:w-[2rem] sm:h-[2rem] lg:w-[3.8rem] lg:h-[3.8rem] xl:w-[4.3rem] xl:h-[4.3rem]';
-  const MOHAN_CONTAINER_STYLE = 'flex items-center space-x-0 mx-auto mt-4';
+  const MOHAN_CONTAINER_STYLE = 'flex items-center justify-center space-x-0 mx-auto mt-4';
     return (
         <div className='bg-gradient-to-tr from-blue-50 to-indigo-50'>
             {/* Top section: image and text */}
@@ -29,7 +29,7 @@ function HeroSection() {
                         </span>{' '}
                         Portfolio
                     </h1> */}
-                    <h1 className="text-3xl sm:text-4xl font-bold text-gray-800">Hi, this is</h1>
+                    <h1 className="text-3xl sm:text-4xl font-bold text-gray-800">Hi,This is</h1>
                     <div className={MOHAN_CONTAINER_STYLE}>
                       {/* M */}
                       <span className={BASE_CHAR_STYLE}>M</span>
