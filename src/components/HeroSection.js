@@ -76,7 +76,7 @@ export default function HeroSection() {
         >
           <span
             onClick={() => handleNavClick('contact')}
-            className="px-8 py-3 rounded-full font-semibold bg-black text-white hover:scale-105 transition-transform shadow-xl"
+            className="px-8 py-3 rounded-full font-semibold bg-black text-white hover:pointer hover:scale-105 transition-transform shadow-xl"
           >
             Let’s Talk
           </span>
