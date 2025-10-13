@@ -2,10 +2,56 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" href="/Logo.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
+
+    <!-- ✅ Favicon (browser tab icon) -->
+    <link rel="icon" href="%PUBLIC_URL%/Logo.png" type="image/png" />
+
+    <!-- ✅ Apple & PWA Icons -->
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/ProfilePhoto.png" />
+
+    <!-- ✅ SEO Meta Tags -->
+    <title>Ashapu Mohan | Full Stack Developer & UI/UX Designer</title>
+    <meta
+      name="description"
+      content="I'm Ashapu Mohan, a passionate Full Stack Developer specializing in React, Node.js, and UI/UX design. Explore my projects, skills, and get in touch for collaboration."
+    />
+    <meta
+      name="keywords"
+      content="Ashapu Mohan, Full Stack Developer, React Developer, Node.js Developer, MERN Stack, UI/UX Designer, Portfolio, Web Developer India"
+    />
+    <meta name="author" content="Ashapu Mohan" />
+
+    <!-- ✅ Open Graph (for LinkedIn, Facebook, WhatsApp Preview) -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Ashapu Mohan Portfolio" />
+    <meta property="og:title" content="Ashapu Mohan | Full Stack Developer" />
+    <meta
+      property="og:description"
+      content="Portfolio of Ashapu Mohan — a creative full stack web developer specializing in MERN stack and UI/UX design."
+    />
+    <!-- ⚠️ Upload your image below into /public/ and replace filename -->
+    <meta property="og:image" content="https://ashapu-mohan-portfolio.onrender.com/PagePreview.png" />
+    <meta property="og:image:alt" content="Portfolio preview of Ashapu Mohan" />
+    <meta property="og:url" content="https://ashapu-mohan-portfolio.onrender.com/" />
+
+    <!-- ✅ Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Ashapu Mohan | Full Stack Developer" />
+    <meta
+      name="twitter:description"
+      content="Explore the portfolio of Ashapu Mohan — Full Stack Developer, MERN Stack & UI/UX Specialist."
+    />
+    <meta name="twitter:image" content="https://ashapu-mohan-portfolio.onrender.com/PagePreview.png" />
+
+    <!-- ✅ Canonical URL -->
+    <link rel="canonical" href="https://ashapu-mohan-portfolio.onrender.com/" />
+
+    <!-- ✅ Google Verification -->
     <meta name="google-site-verification" content="_QgA2IC8xHsn-eXPmpzECXdeOMXanjoMB_mxm1jkmLM" />
+
+    <!-- ✅ Schema Markup for SEO -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -13,6 +59,7 @@
       "name": "Ashapu Mohan",
       "alternateName": "Mohan Ashapu",
       "url": "https://ashapu-mohan-portfolio.onrender.com/",
+      "image": "https://ashapu-mohan-portfolio.onrender.com/ProfilePhoto.png",
       "sameAs": [
         "https://www.linkedin.com/in/mohan-ashapu-724aba258",
         "https://github.com/AshapuMohan",
@@ -24,41 +71,22 @@
     }
     </script>
 
-<!--     <meta
-      name="description"
-      content="Web site created using create-react-app"
-    /> -->
+    <!-- ✅ Styles & Icons -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>Ashapu Mohan</title>
+    <!-- ✅ Manifest -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
   </head>
+
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
-
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
   </body>
 </html>
