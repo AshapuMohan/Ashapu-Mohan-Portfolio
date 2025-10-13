@@ -48,15 +48,14 @@ const experience = [
 ]
 
 const projects = [
-  {
-    title: 'Waste Management Website',
-    image: '/srp.png',
-    description: `Responsive website to promote awareness about recyclable waste and eco-friendly practices. Integrated Google QR Code Scanner for user convenience.`,
-    techStack: ['HTML', 'CSS', 'JavaScript', 'Qr Scanner'],
-    detailsLink: 'https://waste-management-six.vercel.app',
-    githubLink: 'https://github.com/AshapuMohan/Waste-Management',
-  },
-  {
+    {
+    title: 'EduMatrix Website',
+    image: '/edumatrix.png',
+    description: `a full-stack web application designed to streamline student learning, task submissions, and mentor interactions. This platform helps bridge the gap between students and mentors in project-based learning environments like internships and academic programs.`,
+    techStack: ['HTML', 'CSS', 'JavaScript', 'React', 'Express.js', 'MongoDB'],
+    detailsLink: 'https://edu-matrix-pied.vercel.app',
+    githubLink: 'https://github.com/AshapuMohan/EduMatrix',
+  },  {
     title: 'Personal Portfolio',
     image: '/portfolio.png',
     description: `My portfolio presents my projects, skills, and certifications with an interactive UI built using React, Tailwind CSS, and Framer Motion. It also includes SEO optimization to improve visibility.`,
@@ -65,12 +64,12 @@ const projects = [
     githubLink: 'https://github.com/AshapuMohan/MohanAshapuPortfolio',
   },
   {
-    title: 'Collegetips Photo Gallery',
-    image: '/collegetips.png',
-    description: `A vibrant and responsive photo gallery showcasing team moments, creative campaigns, and behind-the-scenes fun. Easily filter images by category and explore highlights, including an embedded Instagram post.`,
-    techStack: ['React', 'Tailwind CSS'],
-    detailsLink: 'https://collegetips-tau.vercel.app',
-    githubLink: 'https://github.com/AshapuMohan/Collegetips',
+    title: 'Waste Management Website',
+    image: '/srp.png',
+    description: `Responsive website to promote awareness about recyclable waste and eco-friendly practices. Integrated Google QR Code Scanner for user convenience.`,
+    techStack: ['HTML', 'CSS', 'JavaScript', 'Qr Scanner'],
+    detailsLink: 'https://waste-management-six.vercel.app',
+    githubLink: 'https://github.com/AshapuMohan/Waste-Management',
   },
   {
     title: 'Linkedin UI Clone',
@@ -94,14 +93,6 @@ const projects = [
     techStack: ['HTML', 'CSS', 'JavaScript', 'React', 'Express.js', 'MongoDB'],
     detailsLink: 'https://vehicle-aid-pi.vercel.app/',
     githubLink: 'https://github.com/AshapuMohan/VehicleAid',
-  },
-  {
-    title: 'EduMatrix Website',
-    image: '/edumatrix.png',
-    description: `a full-stack web application designed to streamline student learning, task submissions, and mentor interactions. This platform helps bridge the gap between students and mentors in project-based learning environments like internships and academic programs.`,
-    techStack: ['HTML', 'CSS', 'JavaScript', 'React', 'Express.js', 'MongoDB'],
-    detailsLink: 'https://edu-matrix-pied.vercel.app',
-    githubLink: 'https://github.com/AshapuMohan/EduMatrix',
   }
 ];
 
