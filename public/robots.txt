@@ -1,6 +1,4 @@
 User-agent: *
 Allow: /
+
 Sitemap: https://ashapu-mohan-portfolio.onrender.com/sitemap.xml
-# https://www.robotstxt.org/robotstxt.html
-User-agent: *
-Disallow:
