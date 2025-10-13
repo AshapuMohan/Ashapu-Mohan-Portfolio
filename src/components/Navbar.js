@@ -64,14 +64,6 @@ function Navbar() {
           href="/"
           className="flex item-center justify-center text-2xl font-bold transition-transform duration-300 hover:scale-105"
         >
-          <div className="relative w-8 h-8 mr-1">
-            <div className="absolute inset-0 rounded-full" />
-            <img
-              src="/head.png"
-              alt="Profile"
-              className="relative z-10 rounded-full w-8 h-8 object-cover"
-            />
-          </div>
           Ashapu Mohan
         </a>
 
