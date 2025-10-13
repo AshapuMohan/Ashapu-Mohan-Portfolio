@@ -46,7 +46,7 @@ const projects = [
     githubLink: 'https://github.com/AshapuMohan/Collegetips',
   },
   {
-    title: 'Linkedin-Clone',
+    title: 'Linkedin UI Clone',
     image: '/linkedin-clone.png',
     description: `A frontend-only implementation of LinkedIn’s interface, showcasing the design and layout of professional networking features. Users can explore a simulated feed, profile page, and post layout. While it doesn’t include backend logic, it demonstrates strong skills in replicating real-world web applications through frontend development.`,
     keyfeatures: [
@@ -101,7 +101,7 @@ const projects = [
       'Modern and responsive UI',
     ],
     techStack: ['HTML', 'CSS', 'JavaScript', 'React', 'Express.js', 'MongoDB'],
-    detailsLink: 'https://edu-matrix-pied.vercel.app/stu-home',
+    detailsLink: 'https://edu-matrix-pied.vercel.app',
     githubLink: 'https://github.com/AshapuMohan/EduMatrix',
   }
 ];
