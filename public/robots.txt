@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://ashapu-mohan-portfolio.onrender.com/sitemap.xml
+Sitemap: https://mohanashapu.onrender.com/sitemap.xml
