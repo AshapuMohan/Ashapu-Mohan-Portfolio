@@ -82,8 +82,6 @@ export default function HeroSection() {
           </span>
           <Link
             to="/projects"
-            target="_blank"
-            rel="noreferrer"
             className="px-8 py-3 rounded-full font-semibold border border-gray-300 text-gray-700 hover:bg-gray-50 transition shadow-sm"
           >
             My Work
