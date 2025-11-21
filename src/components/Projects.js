@@ -26,18 +26,13 @@ const certificates = [
 
 const experience = [
   {
-    simulation_name: "Front-End Software Engineering Job Simulation",
-    company_name: "SkyScanner",
+    simulation_name: "Mern Stack Internship",
+    company_name: "UptoSkills",
     year: "2025",
   },
   {
-    simulation_name: "Advanced Software Engineering Job Simulation",
-    company_name: "Walmart Global Tech",
-    year: "2025",
-  },
-  {
-    simulation_name: "Data Visualisation: Business Insights Simulation",
-    company_name: "TATA",
+    simulation_name: "Mern Stack Internship",
+    company_name: "Smartbridge",
     year: "2025",
   },
   {
@@ -45,6 +40,11 @@ const experience = [
     company_name: "Salesforce",
     year: "2023",
   },
+  {
+    simulation_name: "Front-End Software Engineering Job Simulation",
+    company_name: "SkyScanner",
+    year: "2025",
+  }
 ]
 
 const projects = [
