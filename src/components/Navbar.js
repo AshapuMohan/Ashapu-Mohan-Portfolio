@@ -152,7 +152,7 @@ function Navbar() {
           <li>
             <button
               onClick={toggleDarkMode}
-              className={`relative w-12 h-6 rounded-full transition-all duration-300 focus:outline-none ${darkMode ? 'bg-gray-700' : 'bg-gray-300'
+              className={`relative w-12 h-6 border border-gray-100 rounded-full transition-all duration-300 focus:outline-none ${darkMode ? 'bg-gray-700' : 'bg-gray-300'
                 }`}
               aria-label="Toggle dark mode"
             >
@@ -174,7 +174,7 @@ function Navbar() {
           {/* Dark Mode Toggle - Mobile */}
           <button
             onClick={toggleDarkMode}
-            className={`relative w-12 h-6 rounded-full transition-all duration-300 focus:outline-none ${darkMode ? 'bg-gray-700' : 'bg-gray-300'
+            className={`relative w-12 h-6 border border-gray-100 rounded-full transition-all duration-300 focus:outline-none ${darkMode ? 'bg-gray-700' : 'bg-gray-300'
               }`}
             aria-label="Toggle dark mode"
           >
