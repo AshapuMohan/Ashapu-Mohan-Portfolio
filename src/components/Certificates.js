@@ -121,9 +121,9 @@ const Certificates = () => {
     ];
 
     return (
-        <div className=" bg-gradient-to-tr from-blue-50 to-indigo-50 min-h-screen sm:p-6 pb-20 pt">
+        <div className="min-h-screen sm:p-6 pb-20 pt bg-white dark:bg-zinc-900 text-black dark:text-white transition-colors duration-500">
             
-            <div className="text-3xl font-bold flex items-center justify-center mt-30 mb-10"><FaCertificate style={{ color: "#f39c12", marginRight: "8px" }}/>Certificates</div>
+            <div className="tech-stack-item text-3xl font-bold flex items-center justify-center mt-30 mb-10"><FaCertificate style={{ color: "#f39c12", marginRight: "8px" }}/>Certificates</div>
 
             <Worker workerUrl={`https://unpkg.com/pdfjs-dist@3.11.174/build/pdf.worker.min.js`}>
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
@@ -131,7 +131,7 @@ const Certificates = () => {
                         <div
                             key={cert.id}
                             onClick={() => setSelectedCert(cert)}
-                            className="cursor-pointer relative group bg-white border border-gray-300 rounded-lg shadow-md p-2 flex flex-col items-center w-full max-w-sm mx-auto"
+                            className="cursor-pointer relative group bg-white dark:bg-zinc-800 border border-gray-300 dark:border-gray-700 rounded-lg shadow-md p-2 flex flex-col items-center w-full max-w-sm mx-auto text-black dark:text-white"
                         >
                             <h2 className="font-semibold text-center mb-2 text-sm">{cert.cert_brand}</h2>
                             <div className="w-full h-[240px] overflow-hidden pointer-events-none">
@@ -140,7 +140,7 @@ const Certificates = () => {
                                     defaultScale={SpecialZoomLevel.PageFit}
                                 />
                             </div>
-                            <div className="absolute rounded-t-xl bottom-0 left-0 right-0 bg-black bg-opacity-60 text-white text-sm text-center px-2 py-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <div className="absolute rounded-t-xl bottom-0 left-0 right-0 bg-black dark:bg-black bg-opacity-60 text-white text-sm text-center px-2 py-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                                 {cert.cert_name}
                             </div>
                         </div>

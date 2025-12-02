@@ -1,6 +1,6 @@
 
 const projects = [
-      {
+  {
     title: 'VehicleAid Website',
     image: '/miniproject.png',
     description: `VehicleAid is a MERN stack web application designed to assist users in finding nearby mechanics during vehicle breakdowns. The platform uses location-based services to display mechanic details such as name, phone number, and distance on an interactive map. Users can send service requests directly through the platform, and mechanics can view user details (name, contact, problem) and accept requests. All accepted histories are securely stored in MongoDB for future reference.`,
@@ -11,7 +11,7 @@ const projects = [
       'Login system for both mechanics and users',
       'MongoDB integration for history tracking',
     ],
-    techStack: ['HTML', 'CSS', 'JavaScript', 'React', 'Express.js', 'MongoDB'],
+    techStack: ['React', 'Express.js', 'MongoDB', 'Tailwind CSS'],
     detailsLink: 'https://vehicle-aid-pi.vercel.app/',
     githubLink: 'https://github.com/AshapuMohan/VehicleAid',
   },
@@ -26,11 +26,11 @@ const projects = [
       'Category-wise course listing and browsing',
       'Modern and responsive UI',
     ],
-    techStack: ['HTML', 'CSS', 'JavaScript', 'React', 'Express.js', 'MongoDB'],
+    techStack: ['React', 'Express.js', 'MongoDB', 'Tailwind CSS'],
     detailsLink: 'https://edu-matrix-pied.vercel.app',
     githubLink: 'https://github.com/AshapuMohan/EduMatrix',
   },
-    {
+  {
     title: 'Personal Portfolio',
     image: '/portfolio.png',
     description: `A responsive and interactive personal portfolio built using modern frontend technologies. The website showcases skills, projects, education, and contact details in a clean and professional layout. It features subtle animations, icons, and sections like Skills, Projects (with achievements & certificates), and a “Hire Me” call-to-action. It also includes SEO optimization to improve visibility.`,
@@ -42,7 +42,7 @@ const projects = [
       'Responsive layout optimised for all devices',
     ],
     techStack: ['React', 'Tailwind CSS', 'Framer Motion'],
-    detailsLink: 'https://ashapumohanportfolio.netlify.app',
+    detailsLink: 'https://mohanashapu.onrender.com',
     githubLink: 'https://github.com/AshapuMohan/MohanAshapuPortfolio',
   },
   {
@@ -59,7 +59,7 @@ const projects = [
     techStack: ['React', 'Tailwind CSS'],
     detailsLink: 'https://linkedinclone-o7l9.onrender.com',
     githubLink: 'https://github.com/AshapuMohan/Linkedinclone',
-  },{
+  }, {
     title: 'World Hive',
     image: '/worldhive.png',
     description: `WorldHive is a concept-based frontend website that serves as a creative platform design. It focuses on UI/UX, delivering a modern and visually engaging interface. Built with responsive layouts and animations, it highlights your ability to create aesthetic and functional frontend applications.`,
@@ -70,7 +70,7 @@ const projects = [
       'Smooth transitions and animations',
       'Clean, modular codebase',
     ],
-    techStack: ['React', 'Tailwind CSS','REST API'],
+    techStack: ['React', 'Tailwind CSS', 'REST API'],
     detailsLink: 'https://worldhive2025.onrender.com',
     githubLink: 'https://github.com/AshapuMohan/worldhive',
   },
@@ -124,27 +124,28 @@ It’s designed to help users perform complex web tasks effortlessly, improve pr
 
 const Project = () => {
   return (
-    <div className="flex flex-col items-center pt-24 px-4 sm:px-6 lg:px-10 mb-20">
+    <div className="flex flex-col items-center pt-24 px-4 sm:px-6 lg:px-10 pb-20 bg-white dark:bg-zinc-900 text-black dark:text-white transition-colors duration-500 w-full">
       {/* Header */}
-      <div className="p-4 bg-blue-100 text-blue-600 rounded-full mb-4">
+      <div className="p-4 dark:bg-blue-950 text-blue-600 dark:text-blue-400 rounded-full pb-4">
         <i className="fa-solid fa-diagram-project text-xl"></i>
       </div>
-      <h2 className="text-3xl sm:text-4xl lg:text-5xl text-center font-extrabold text-gray-900 tracking-tight pb-5">
-        My Projects
-      </h2>
-      <p className="mt-6 mb-15 text-base sm:text-lg text-gray-700 max-w-2xl mx-auto text-center">
-        Browse through my portfolio of projects, showcasing my skills in web development, design, and problem-solving.
-      </p>
-
+      <div className="text-center mb-12">
+        <h2 className="text-3xl sm:text-4xl lg:text-5xl text-center font-extrabold text-gray-900 dark:text-white tracking-tight pb-5">
+          My Projects
+        </h2>
+        <p className="mt-6 mb-15 text-base sm:text-lg text-gray-700 dark:text-gray-300 max-w-2xl mx-auto text-center">
+          Browse through my portfolio of projects, showcasing my skills in web development, design, and problem-solving.
+        </p>
+      </div>
       {/* Single Column Grid */}
       <div className="grid grid-cols-1 gap-10 w-full max-w-3xl">
         {projects.map((project, index) => (
           <div
             key={index}
-            className="relative bg-white border border-gray-200 rounded-xl hover:shadow-lg transition duration-300 p-4 flex flex-col"
+            className="relative bg-white dark:bg-zinc-800 border border-gray-200 dark:border-gray-700 rounded-xl hover:shadow-lg transition duration-300 p-4 flex flex-col text-black dark:text-white"
           >
             {/* Badge */}
-            <span className="absolute top-4 left-4 bg-blue-600 text-white text-xs px-3 py-1 rounded-full z-10 shadow">
+            <span className="absolute top-4 left-4 bg-blue-600 dark:bg-blue-700 text-white text-xs px-3 py-1 rounded-full z-10 shadow">
               Featured
             </span>
 
@@ -173,11 +174,11 @@ const Project = () => {
               </ul>
 
               {/* Tech Stack */}
-              <ul className="flex flex-wrap gap-2 mt-3">
+              <ul className="tech-stack-item flex  flex-wrap gap-2 mt-3">
                 {project.techStack.map((tech, i) => (
                   <li
                     key={i}
-                    className="bg-gray-100 text-gray-800 text-xs px-2 py-1 rounded-full"
+                    className="tech-stack-item bg-gray-100 text-gray-800 dark:bg-black dark:text-white font-medium text-xs px-2 py-1 rounded"
                   >
                     {tech}
                   </li>
@@ -198,7 +199,7 @@ const Project = () => {
                   href={project.githubLink}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="ml-4 text-black hover:text-gray-700 transition"
+                  className="ml-4 tech-stack-item text-black hover:text-gray-700 transition"
                 >
                   <i className="fa-brands fa-github text-2xl"></i>
                 </a>

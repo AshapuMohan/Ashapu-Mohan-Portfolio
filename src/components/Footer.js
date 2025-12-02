@@ -46,7 +46,7 @@ export default function Footer() {
   return (
     <footer
       ref={footerRef}
-      className="relative bg-neutral-900 text-white py-5 px-5 rounded-t-3xl"
+      className="relative bg-neutral-900 dark:bg-zinc-950 text-white py-5 px-5 rounded-t-3xl transition-colors duration-500 border-t border-gray-700"
     >
       {showButton && (
         <button
@@ -115,34 +115,34 @@ export default function Footer() {
             target="_blank"
             rel="noreferrer"
           >
-            <i className="fa-brands fa-facebook hover:text-sky-800 hover:scale-150 transition-transform duration-300" />
+            <i className="fa-brands fa-facebook" />
           </a>
           <a
             href="https://x.com/MohanAshapu"
             target="_blank"
             rel="noreferrer"
           >
-            <i className="fa-brands fa-x-twitter hover:text-black hover:scale-150 transition-transform duration-300" />
+            <i className="fa-brands fa-x-twitter" />
           </a>
           <a
             href="https://www.linkedin.com/in/mohan-ashapu-724aba258"
             target="_blank"
             rel="noreferrer"
           >
-            <i className="fa-brands fa-linkedin hover:text-sky-500 hover:scale-150 transition-transform duration-300" />
+            <i className="fa-brands fa-linkedin" />
           </a>
           <a
             href="https://github.com/AshapuMohan"
             target="_blank"
             rel="noreferrer"
           >
-            <i className="fa-brands fa-github hover:text-black hover:scale-150 transition-transform duration-300" />
+            <i className="fa-brands fa-github" />
           </a>
           <a href="mailto:ashapumohan123@gmail.com">
-            <i className="fa-solid fa-envelope hover:text-red-500 hover:scale-150 transition-transform duration-300" />
+            <i className="fa-solid fa-envelope" />
           </a>
           <a href="tel:+917989909756">
-            <i className="fa-solid fa-phone hover:text-red-500 hover:scale-150 transition-transform duration-300" />
+            <i className="fa-solid fa-phone" />
           </a>
         </div>
       </div>

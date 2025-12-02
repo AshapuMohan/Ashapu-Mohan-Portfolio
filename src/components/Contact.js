@@ -1,47 +1,49 @@
 import React from "react";
-import { FaGraduationCap, FaCalendar, FaUniversity, FaEnvelope, FaDownload } from "react-icons/fa";
+import { FaGraduationCap, FaUniversity, FaEnvelope, FaDownload } from "react-icons/fa";
 import { motion } from "framer-motion";
 const educationData = [
   {
     degree: "B-Tech in Information Technology",
     institution: "MVGR College Of Engineering",
-    duration: "2022 - present",
+    duration: "Oct ‘22 - present",
     description:
       "Focused on core IT subjects including web technologies, data structures, and software engineering.",
+    icon: <img src="/mvgr.png" alt="MVGR Logo" className="w-15 h-10 rounded object-fill" />,
   },
   {
     degree: "Intermediate (MPC)",
     institution: "PPR Kaumudi Junior College",
-    duration: "2020 - 2022",
+    duration: "Aug ‘20 – Mar ‘22",
     description: "Mathematics, Physics, and Chemistry with emphasis on problem-solving and analytical skills.",
+    icon: <img src="/ppr.png" alt="PPR Logo" className="w-15 h-10 rounded object-fill" />,
+
   },
   {
     degree: "High School",
     institution: "ZPH School, Laveru",
-    duration: "2015 - 2020",
+    duration: "Jun ‘15 – Apr ‘20",
     description: "General education with a strong academic foundation in all subjects.",
+    icon: <FaUniversity className="w-15 h-10 text-blue-600 dark:text-blue-400" />,
   },
 ];
 
-const EducationCard = ({ degree, institution, duration, gpa, description }) => (
+const EducationCard = ({ degree, institution, duration, icon, description }) => (
   <motion.div
-    whileHover={{ scale: 1.03, boxShadow: "0 8px 20px rgba(0,0,0,0.15)" }}
-    transition={{ type: "spring", stiffness: 300 }}
-    className="bg-white border border-blue-200 rounded-xl p-6 flex flex-col md:flex-row justify-between items-start md:items-center gap-6 shadow-sm cursor-pointer"
+    className="bg-white dark:bg-zinc-800 border border-blue-200 dark:border-blue-900 rounded-xl p-6 flex flex-col md:flex-row justify-between items-start md:items-center gap-6 shadow-sm cursor-pointer text-black dark:text-white transition-colors duration-300"
   >
-    <div className="flex items-center gap-5">
-      <div className="p-4 bg-blue-100 text-blue-600 rounded-full text-3xl">
-        <FaUniversity />
-      </div>
+    <div className="flex flex-col items-center text-center md:flex-row md:items-start md:text-left gap-5">
+      <span>
+        {icon}
+      </span>
       <div>
-        <h3 className="text-xl font-bold text-gray-900">{degree}</h3>
-        <p className="text-blue-600 font-semibold">{institution}</p>
-        <p className="mt-2 text-gray-700">{description}</p>
+        <h3 className="text-xl font-bold text-gray-900 dark:text-white">{degree}</h3>
+        <p className="text-blue-500 dark:text-blue-400 font-semibold">{institution}</p>
+        <p className="mt-2 text-gray-700 dark:text-[#627b9b]">{description}</p>
       </div>
     </div>
-    <div className="text-right">
-      <p className="flex items-center gap-2 text-gray-600 text-sm mb-1">
-        <FaCalendar /> {duration}
+    <div className="text-right items-start">
+      <p className="flex items-center gap-2 text-gray-600 dark:text-[#627b9b] text-sm mb-1">
+        {duration}
       </p>
     </div>
   </motion.div>
@@ -49,41 +51,14 @@ const EducationCard = ({ degree, institution, duration, gpa, description }) => (
 
 const Contact = () => {
   return (
-    <section className="bg-gradient-to-br from-indigo-50 via-blue-50 to-blue-100 py-16 px-6 sm:px-12 lg:px-24 min-h-screen">
-      <div className="max-w-5xl mx-auto flex flex-col gap-16">
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          className="text-center"
-        >
-          <div className="inline-flex items-center justify-center bg-blue-100 text-blue-600 rounded-full w-16 h-16 mx-auto mb-6 text-4xl">
+    <section className="py-5 px-6 sm:px-12 lg:px-24 min-h-screen bg-white dark:bg-zinc-900 text-black dark:text-white transition-colors duration-500">
+      <div className="max-w-6xl mx-auto flex flex-col gap-16">
+        <div>
+          <div className="flex items-center justify-center text-blue-600 rounded-full w-16 h-16 mx-auto mb-4 text-4xl">
             <FaGraduationCap />
           </div>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-gray-900 tracking-tight">Hire Me</h2>
-          <p className="max-w-3xl mx-auto text-gray-700 text-lg leading-relaxed mb-6">
-            I'm available for full-time positions, internships, and freelance projects. Let's
-            create something amazing together!
-          </p>
-          <div className="flex flex-wrap justify-center gap-5">
-            <a
-              href="/Ashapu Mohan-Resume.pdf"
-              className="flex items-center gap-3 bg-blue-600 text-white px-6 py-3 rounded-xl font-semibold shadow-lg hover:bg-blue-700 transition"
-              download
-            >
-              <FaDownload /> View Resume
-            </a>
-            <a
-              href="mailto:ashapumohan123@gmail.com"
-              className="flex items-center gap-3 border-2 border-blue-600 text-blue-600 px-6 py-3 rounded-xl font-semibold hover:bg-blue-100 transition"
-            >
-              <FaEnvelope /> Contact Me
-            </a>
-          </div>
-        </motion.div>
-        <div>
-          <h2 className="text-3xl text-center sm:text-4xl lg:text-5xl font-extrabold text-gray-900 tracking-tight">Education</h2>
-          <p className="text-center my- text-base sm:text-lg text-gray-700 max-w-2xl mx-auto pb-5">
+          <h2 className="text-3xl text-center sm:text-4xl lg:text-5xl font-extrabold text-gray-900 dark:text-white tracking-tight py-1">Education</h2>
+          <p className="text-center my- text-base sm:text-lg text-gray-700 dark:text-[#627b9b] max-w-2xl mx-auto py-3">
             My academic journey that built the foundation for my technical expertise.
           </p>
 
@@ -97,20 +72,29 @@ const Contact = () => {
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="text-center mt-20"
+          className="text-center"
         >
-          <h2 className="text-3xl font-bold mb-4 text-gray-900">Ready to Start Your Next Project?</h2>
-          <p className="text-gray-700 mb-6 max-w-xl mx-auto">
-            I'm always looking for exciting opportunities to create exceptional digital
-            experiences. Let's discuss how we can work together.
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-gray-900 dark:text-white tracking-tight">Hire Me</h2>
+          <p className="max-w-3xl mx-auto text-gray-700 dark:text-[#627b9b] text-lg leading-relaxed">
+            I'm available for full-time positions, internships, and freelance projects. Let's
+            create something amazing together!
           </p>
+        </motion.div>
+        <div id="contacting" className=" flex flex-wrap justify-center gap-5">
+          <a
+            href="/Ashapu Mohan-Resume.pdf"
+            className="flex px-8 lg:py-3 py-3 items-center rounded-full font-semibold bg-black dark:bg-white text-white dark:text-black cursor-pointer hover:scale-105 transition-transform shadow-xl"
+            download
+          >
+            <FaDownload className="text-lg mr-1" /> View Resume
+          </a>
           <a
             href="mailto:ashapumohan123@gmail.com"
-            className="inline-block bg-blue-600 text-white px-8 py-3 rounded-xl font-semibold hover:bg-blue-700 transition"
+            className="flex px-8 lg:py-3 py-3 items-center rounded-full font-semibold border border-gray-300 dark:border-gray-700 text-gray-700 dark:text-[#627b9b] hover:scale-105 transition shadow-sm"
           >
-            Get In Touch
+            <FaEnvelope className="text-lg mr-1" /> Get In Touch
           </a>
-        </motion.div>
+        </div>
       </div>
     </section>
   );
