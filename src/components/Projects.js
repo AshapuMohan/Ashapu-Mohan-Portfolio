@@ -143,7 +143,7 @@ const Projects = () => {
                     href={project.detailsLink}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="bg-blue-50 flex items-center dark:bg-white dark:text-black text-blue-500 px-3 py-1 rounded text-sm font-medium hover:bg-blue-100 transition"
+                    className="bg-blue-50 flex items-center dark:bg-white text-blue-500 px-3 py-1 rounded text-sm font-medium hover:bg-blue-100 transition"
                   >
                     <FaGlobe className="mr-1"/> Link
                   </a>
