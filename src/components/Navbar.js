@@ -157,7 +157,7 @@ function Navbar() {
               aria-label="Toggle dark mode"
             >
               <div
-                className={`absolute top-0.5 w-5 h-5 bg-white rounded-full shadow-md transition-all duration-300 flex items-center justify-center cursor-pointer ${darkMode ? 'translate-x-4' : 'translate-x-0.5'
+                className={`absolute top-0.5 w-5 h-5 bg-white rounded-full shadow-md transition-all duration-300 flex items-center justify-center cursor-pointer ${darkMode ? 'translate-x-3' : 'translate-x-0.5'
                   }`}
               >
                 {darkMode ? (
