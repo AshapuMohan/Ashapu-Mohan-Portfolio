@@ -48,7 +48,7 @@ export default function HeroSection() {
           className="text-5xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight leading-tight"
         >
           Crafting{" "}
-          <span className="bg-clip-text text-transparent bg-gradient-to-r from-slate-600 via-slate-600 to-slate-600">
+          <span className="bg-clip-text text-transparent bg-slate-600">
           Digital Experiences
         </span>
 
