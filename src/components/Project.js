@@ -12,7 +12,7 @@ const projects = [
       'MongoDB integration for history tracking',
     ],
     techStack: ['React', 'Express.js', 'MongoDB', 'Tailwind CSS'],
-    detailsLink: 'https://vehicle-aid-pi.vercel.app/',
+    detailsLink: 'https://vehicle-aid-pi.vercel.app/userHome',
     githubLink: 'https://github.com/AshapuMohan/VehicleAid',
   },
   {
@@ -27,7 +27,7 @@ const projects = [
       'Modern and responsive UI',
     ],
     techStack: ['React', 'Express.js', 'MongoDB', 'Tailwind CSS'],
-    detailsLink: 'https://edu-matrix-pied.vercel.app',
+    detailsLink: 'https://edu-matrix-pied.vercel.app/stu-home',
     githubLink: 'https://github.com/AshapuMohan/EduMatrix',
   },
   {
