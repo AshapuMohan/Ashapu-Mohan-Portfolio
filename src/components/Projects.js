@@ -32,9 +32,18 @@ const projects = [
     image: '/edumatrix.png',
     description: `a full-stack web application designed to streamline student learning, task submissions, and mentor interactions. This platform helps bridge the gap between students and mentors in project-based learning environments like internships and academic programs.`,
     techStack: ['React', 'Express.js', 'MongoDB', 'Tailwind CSS'],
-    detailsLink: 'https://edu-matrix-pied.vercel.app',
+    detailsLink: 'https://edu-matrix-pied.vercel.app/stu-home',
     githubLink: 'https://github.com/AshapuMohan/EduMatrix',
-  }, {
+  },
+    {
+    title: 'VehicleAid Website',
+    image: '/miniproject.png',
+    description: `It is a demo web app that simulates how users can locate and request help from nearby mechanics during vehicle breakdowns. It showcases user-mechanic interaction flow using mock data, with login panels and service history using MongoDB.`,
+    techStack: ['React', 'Express.js', 'MongoDB', 'Tailwind CSS'],
+    detailsLink: 'https://vehicle-aid-pi.vercel.app/userHome',
+    githubLink: 'https://github.com/AshapuMohan/VehicleAid',
+  },
+  {
     title: 'Personal Portfolio',
     image: '/portfolio.png',
     description: `a modern, interactive developer portfolio built to highlight technical skills, showcase real-time projects, and enhance professional visibility. This platform presents my work with dynamic UI features like dark mode, animations, and SEO optimisation for engaging user experience.`,
@@ -62,16 +71,8 @@ const projects = [
     image: '/worldhive.png',
     description: `A React.js and Tailwind-powered project showcasing country data dynamically fetched from the REST Countries API, featuring a fully responsive interface, search option, smooth UI interactions for an intuitive global exploration experience.`,
     techStack: ['React', 'Tailwind CSS', 'REST API'],
-    detailsLink: 'https://worldhive2025.onrender.com',
+    detailsLink: 'https://worldhive2025.onrender.com/',
     githubLink: 'https://github.com/AshapuMohan/worldhive',
-  },
-  {
-    title: 'VehicleAid Website',
-    image: '/miniproject.png',
-    description: `It is a demo web app that simulates how users can locate and request help from nearby mechanics during vehicle breakdowns. It showcases user-mechanic interaction flow using mock data, with login panels and service history using MongoDB.`,
-    techStack: ['React', 'Express.js', 'MongoDB', 'Tailwind CSS'],
-    detailsLink: 'https://vehicle-aid-pi.vercel.app/',
-    githubLink: 'https://github.com/AshapuMohan/VehicleAid',
   }
 ];
 const Item = ({ icon, title, subtitle, date, des }) => (
