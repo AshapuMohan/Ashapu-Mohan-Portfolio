@@ -1,6 +1,21 @@
 
 const projects = [
   {
+    title: 'eCard Generator',
+    image: '/ecard.png',
+    description: `An interactive web platform where creativity comes to life, allowing users to design heartfelt electronic greeting cards. With an easy-to-use interface, users can effortlessly create, share, and download unique eCards tailored for every special moment.`,
+    keyfeatures: [
+      'User-friendly eCard design interface',
+      'Customizable templates for various occasions',
+      'Options to share eCards via email or social media',
+      'Downloadable eCards in multiple formats',
+      'Responsive design for all devices',
+    ],
+    techStack: ['Next.js', 'Tailwind CSS', 'React+TypeScript'],
+    detailsLink: '',
+    githubLink: 'https://github.com/AshapuMohan/eCard',
+  },
+  {
     title: 'VehicleAid Website',
     image: '/miniproject.png',
     description: `VehicleAid is a MERN stack web application designed to assist users in finding nearby mechanics during vehicle breakdowns. The platform uses location-based services to display mechanic details such as name, phone number, and distance on an interactive map. Users can send service requests directly through the platform, and mechanics can view user details (name, contact, problem) and accept requests. All accepted histories are securely stored in MongoDB for future reference.`,

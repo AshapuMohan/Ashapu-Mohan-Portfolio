@@ -1,7 +1,5 @@
-import {  FaProjectDiagram } from "react-icons/fa"
+import { FaProjectDiagram } from "react-icons/fa"
 import { motion } from "framer-motion"
-import { FaGithub, FaGlobe } from "react-icons/fa6";
-
 const experience = [
   {
     simulation_name: "Full Stack Internship",
@@ -28,6 +26,14 @@ const experience = [
 
 const projects = [
   {
+    title: 'eCard Generator',
+    image: '/ecard.png',
+    description: `An interactive web platform where creativity comes to life, allowing users to design heartfelt electronic greeting cards. With an easy-to-use interface, users can effortlessly create, share, and download unique eCards tailored for every special moment.`,
+    techStack: ['Next.js', 'Tailwind CSS', 'React+TypeScript'],
+    detailsLink: '',
+    githubLink: 'https://github.com/AshapuMohan/eCard',
+  },
+  {
     title: 'EduMatrix Website',
     image: '/edumatrix.png',
     description: `a full-stack web application designed to streamline student learning, task submissions, and mentor interactions. This platform helps bridge the gap between students and mentors in project-based learning environments like internships and academic programs.`,
@@ -35,7 +41,7 @@ const projects = [
     detailsLink: 'https://edu-matrix-pied.vercel.app/stu-home',
     githubLink: 'https://github.com/AshapuMohan/EduMatrix',
   },
-    {
+  {
     title: 'VehicleAid Website',
     image: '/miniproject.png',
     description: `It is a demo web app that simulates how users can locate and request help from nearby mechanics during vehicle breakdowns. It showcases user-mechanic interaction flow using mock data, with login panels and service history using MongoDB.`,
@@ -144,17 +150,17 @@ const Projects = () => {
                     href={project.detailsLink}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="bg-blue-50 flex items-center dark:bg-white text-blue-500 px-3 py-1 rounded text-sm font-medium hover:bg-blue-100 transition"
+                    className="px-3 bg-black text-white py-1 rounded-full text-sm font-medium transition hover:bg-gray-800"
                   >
-                    <FaGlobe className="mr-1"/> Link
+                    Live <i className="fa-solid fa-up-right-from-square ml-1"></i>
                   </a>
                   <a
                     href={project.githubLink}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="ml-4 flex items-center text-gray-600 hover:text-black bg-blue-50 p-1 px-2 rounded transition text-sm"
+                    className="ml-4 tech-stack-item text-black hover:text-gray-700 transition"
                   >
-                    <FaGithub className="mr-1"/> Code
+                    <i className="fa-brands fa-github text-2xl"></i>
                   </a>
                 </div>
               </div>
