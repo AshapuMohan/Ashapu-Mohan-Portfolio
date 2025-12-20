@@ -2,7 +2,7 @@
 const projects = [
   {
     title: 'eCard Generator',
-    image: '/ecard.png',
+    image: '/eCard.png',
     description: `An interactive web platform where creativity comes to life, allowing users to design heartfelt electronic greeting cards. With an easy-to-use interface, users can effortlessly create, share, and download unique eCards tailored for every special moment.`,
     keyfeatures: [
       'User-friendly eCard design interface',
