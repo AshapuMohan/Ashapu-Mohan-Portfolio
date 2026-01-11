@@ -121,9 +121,9 @@ const Certificates = () => {
     ];
 
     return (
-        <div className="min-h-screen sm:p-6 pb-20 pt bg-white dark:bg-zinc-900 text-black dark:text-white transition-colors duration-500">
-            
-            <div className="tech-stack-item text-3xl font-bold flex items-center justify-center mt-30 mb-10"><FaCertificate style={{ color: "#f39c12", marginRight: "8px" }}/>Certificates</div>
+        <div className="min-h-screen sm:p-6 pb-20 pt bg-white dark:bg-black text-black dark:text-white transition-colors duration-500">
+
+            <div className="tech-stack-item text-3xl font-bold flex items-center justify-center mt-30 mb-10"><FaCertificate style={{ color: "#f39c12", marginRight: "8px" }} />Certificates</div>
 
             <Worker workerUrl={`https://unpkg.com/pdfjs-dist@3.11.174/build/pdf.worker.min.js`}>
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">

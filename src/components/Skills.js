@@ -24,12 +24,12 @@ const skills = [
   { icon: <SiJavascript className="text-yellow-400 w-7 h-7" />, label: 'JavaScript' },
   { icon: <SiTailwindcss className="text-teal-400 w-7 h-7" />, label: 'Tailwind' },
   { icon: <FaReact className="text-blue-500 w-7 h-7" />, label: 'React' },
-  { icon: <FaGithub className=' w-7 h-7 text-zinc-500' />, label: 'GitHub'},
+  { icon: <FaGithub className=' w-7 h-7 text-zinc-500' />, label: 'GitHub' },
   { icon: <FaGitAlt className="text-orange-500 w-7 h-7" />, label: 'Git' },
   { icon: <SiPython className="text-yellow-500 w-7 h-7" />, label: 'Python' },
   { icon: <FaBootstrap className="text-purple-600 w-7 h-7" />, label: 'Bootstrap' },
   { icon: <FaNodeJs className="text-green-600 w-7 h-7" />, label: 'Node.js' },
-  { icon: <SiExpress className=' w-7 h-7 text-zinc-600'/>, label: 'Express.js' },
+  { icon: <SiExpress className=' w-7 h-7 text-zinc-600' />, label: 'Express.js' },
   { icon: <SiMongodb className="text-green-700 w-7 h-7" />, label: 'MongoDB' },
   { icon: <SiMysql className="w-7 h-7 text-blue-400" />, label: 'SQL' },
   { icon: <FaJava className="text-red-600 w-7 h-7" />, label: 'Java' },
@@ -37,7 +37,7 @@ const skills = [
 
 export default function Skills() {
   return (
-    <section id="skills" className="py-20 px-4 sm:px-8 md:px-12 lg:px-24 bg-white dark:bg-zinc-900 text-black dark:text-white transition-colors duration-500">
+    <section id="skills" className="py-20 px-4 sm:px-8 md:px-12 lg:px-24 bg-white dark:bg-black text-black dark:text-white transition-colors duration-500">
       <div className="container mx-auto px-4 max-w-6xl">
         <div className="flex items-center justify-center mb-6 gap-4">
           <div className="h-px flex-1 bg-gradient-to-r from-transparent to-gray-400 dark:to-gray-600"></div>

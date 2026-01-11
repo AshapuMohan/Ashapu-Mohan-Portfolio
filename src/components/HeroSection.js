@@ -24,19 +24,19 @@ export default function HeroSection() {
     }
   };
   return (
-    <section className="relative min-h-screen flex flex-col justify-center items-center overflow-hidden pb-5 bg-white dark:bg-zinc-900 text-black dark:text-white transition-colors duration-500">
+    <section className="relative min-h-screen flex flex-col justify-center items-center overflow-hidden pb-5 bg-white dark:bg-black text-black dark:text-white transition-colors duration-500">
       <div className="relative z-10 items-center flex flex-col justify-center text-center max-w-3xl px-6">
         <motion.div
           initial={{ opacity: 0, scale: 0.95 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ delay: 0.8, duration: 1 }}
-          className="relative mt-16"
+          className="relative"
         >
           <div className="relative">
             <img
-              src="/Mohan-suite1.png"
+              src="/Mohan-suite.png"
               alt="Mohan"
-              className="w-[200px] sm:w-[100px] lg:w-[200px] rounded-2xl object-cover"
+              className="w-[200px] sm:w-[100px] lg:w-[200px] rounded-full object-cover"
             />
           </div>
         </motion.div>
@@ -49,11 +49,11 @@ export default function HeroSection() {
         >
           Crafting{" "}
           <span className="bg-clip-text text-transparent bg-slate-600">
-          Digital Experiences
-        </span>
+            Digital Experiences
+          </span>
 
 
-        {" "}
+          {" "}
           with Code & Design
         </motion.h1>
 
@@ -63,7 +63,7 @@ export default function HeroSection() {
           transition={{ delay: 0.3, duration: 1 }}
           className="mt-6 text-lg sm:text-xl text-gray-600 dark:text-[#627b9b] max-w-2xl mx-auto"
         >
-          I’m <span className="font-semibold text-gray-900 dark:text-gray-100">Ashapu Mohan</span>, 
+          I’m <span className="font-semibold text-gray-900 dark:text-gray-100">Ashapu Mohan</span>,
           a Fullstack Developer blending engineering & design to build interfaces that feel{" "}
           <span className="italic text-violet-600">beautiful, fast, and human.</span>
         </motion.p>
@@ -76,7 +76,7 @@ export default function HeroSection() {
         >
           <span
             onClick={() => handleNavClick('contacting')}
-            className="px-8 lg:py-3 sm:py-1 sm:text-sm rounded-full font-semibold bg-black text-white cursor-pointer hover:scale-105 transition-transform shadow-xl"
+            className="flex px-8 py-3 items-center rounded-full font-semibold bg-zinc-900 dark:bg-white text-white dark:text-black hover:scale-105 transition-transform shadow-lg hover:shadow-xl"
           >
             Let’s Talk
           </span>

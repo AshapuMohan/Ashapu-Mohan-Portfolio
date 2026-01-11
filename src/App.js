@@ -42,7 +42,7 @@ function ProjectsPage() {
     window.scrollTo(0, 0);
   }, []);
   return (
-    <div className="flex flex-col min-h-screen relative bg-gradient-to-tr from-blue-50 to-indigo-50 dark:from-zinc-900 dark:to-zinc-800 text-black dark:text-white transition-colors duration-300">
+    <div className="flex flex-col min-h-screen relative bg-white dark:bg-black text-black dark:text-white transition-colors duration-300">
       <Navbar />
       <main className="flex-grow">
         <Project />
@@ -58,7 +58,7 @@ function CertificatesPage() {
     window.scrollTo(0, 0);
   }, []);
   return (
-    <div className="flex flex-col min-h-screen relative bg-white dark:bg-zinc-900 text-black dark:text-white transition-colors duration-300">
+    <div className="flex flex-col min-h-screen relative bg-white dark:bg-black text-black dark:text-white transition-colors duration-300">
       <Navbar />
       <main className="flex-grow">
         <Certificates />

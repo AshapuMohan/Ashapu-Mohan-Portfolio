@@ -1,230 +1,160 @@
-import { useState, useRef, useEffect } from 'react';
-import { FaBars, FaTimes, FaSun, FaMoon } from 'react-icons/fa';
+import { useState, useEffect } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
+import { Moon, Sun, Menu, X } from 'lucide-react';
 
 function Navbar() {
-  const [menuOpen, setMenuOpen] = useState(false);
-  const [scrolled, setScrolled] = useState(false);
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [darkMode, setDarkMode] = useState(() => {
-    // Check localStorage first
-    const stored = localStorage.getItem('darkMode');
-    if (stored !== null) {
-      return stored === 'true';
+    if (typeof window !== 'undefined') {
+      const stored = localStorage.getItem('darkMode');
+      if (stored) return stored === 'true';
+      return window.matchMedia('(prefers-color-scheme: dark)').matches;
     }
-    // Then check if dark class is already on html
-    if (typeof document !== 'undefined') {
-      return document.documentElement.classList.contains('dark');
-    }
-    // Check system preference
-    return window.matchMedia('(prefers-color-scheme: dark)').matches;
+    return true;
   });
-  const menuRef = useRef();
+
   const location = useLocation();
   const navigate = useNavigate();
 
-  useEffect(() => {
-    const handleClickOutside = (event) => {
-      if (menuRef.current && !menuRef.current.contains(event.target)) {
-        setMenuOpen(false);
-      }
-    };
-
-    if (menuOpen) {
-      document.addEventListener('mousedown', handleClickOutside);
-    } else {
-      document.removeEventListener('mousedown', handleClickOutside);
-    }
-
-    return () => {
-      document.removeEventListener('mousedown', handleClickOutside);
-    };
-  }, [menuOpen]);
-
-  useEffect(() => {
-    const onScroll = () => {
-      setScrolled(window.scrollY > 5);
-    };
-    window.addEventListener('scroll', onScroll);
-    return () => window.removeEventListener('scroll', onScroll);
-  }, []);
-
+  // Handle Dark Mode
   useEffect(() => {
     if (darkMode) {
       document.documentElement.classList.add('dark');
-      document.documentElement.style.colorScheme = 'light';
       localStorage.setItem('darkMode', 'true');
     } else {
       document.documentElement.classList.remove('dark');
-      document.documentElement.style.colorScheme = 'light';
       localStorage.setItem('darkMode', 'false');
     }
   }, [darkMode]);
 
-  const toggleDarkMode = () => {
-    setDarkMode(prevMode => !prevMode);
-  };
+  const toggleDarkMode = () => setDarkMode(!darkMode);
 
   const handleNavClick = (id) => {
-    setMenuOpen(false);
+    setMobileMenuOpen(false);
     if (location.pathname !== '/') {
       navigate('/');
       setTimeout(() => {
-        requestAnimationFrame(() => {
-          const element = document.getElementById(id);
-          if (element) {
-            element.scrollIntoView({ behavior: "smooth" });
-          }
-        });
-      }, 250);
+        const element = document.getElementById(id);
+        if (element) element.scrollIntoView({ behavior: "smooth" });
+      }, 100);
     } else {
       const element = document.getElementById(id);
-      if (element) {
-        element.scrollIntoView({ behavior: 'smooth' });
-      }
+      if (element) element.scrollIntoView({ behavior: 'smooth' });
     }
   };
 
+  const navLinks = [
+    { name: 'Home', action: () => handleNavClick('home') },
+    { name: 'Work', to: '/projects' },
+    { name: 'Skills', action: () => handleNavClick('skills') },
+    { name: 'Contact', action: () => handleNavClick('contacting') },
+  ];
+
   return (
-    <div
-      className={`fixed top-0 left-0 right-0 z-100 lg:mx-[135px] mt-5 px-4 sm:px-10 rounded-full transition-all duration-500 ${scrolled
-          ? 'bg-black/15 dark:bg-white/15 backdrop-blur-md shadow-lg text-gray-900 dark:text-white'
-          : 'bg-transparent text-gray-900 dark:text-white'
-        }`}
-    >
-      <nav className="flex w-full items-center justify-between px-3 sm:px-6 py-3 relative">
-        <a
-          href="/"
-          className="nav-brand flex item-center justify-center text-sm sm:text-lg lg:text-2xl font-bold transition-transform duration-300 hover:scale-105 whitespace-nowrap"
-        >
-          Ashapu Mohan
-        </a>
+    <>
+      <motion.nav
+        initial={{ y: -20, opacity: 0, x: "-50%" }}
+        animate={{ y: 0, opacity: 1, x: "-50%" }}
+        transition={{ duration: 0.6, ease: "easeOut" }}
+        className={`fixed top-4 left-1/2 z-50 w-auto max-w-[90%]`}
+      >
+        <div className={`
+            relative px-5 py-2.5 rounded-full 
+            bg-white/80 dark:bg-black/80 backdrop-blur-md 
+            border border-zinc-200/50 dark:border-white/5 
+            shadow-sm
+            flex items-center gap-6 lg:gap-8
+        `}>
+          {/* Brand - Minimal */}
+          <Link
+            to="/"
+            className="text-sm font-semibold tracking-tight text-zinc-900 dark:text-white hover:opacity-70 transition-opacity"
+          >
+            AM
+          </Link>
 
-        <ul className="hidden md:flex space-x-8 lg:space-x-15 font-semibold text-base lg:text-lg items-center">
-          <li>
-            <span
-              className={`nav-link cursor-pointer transition-colors duration-300 ${scrolled ? 'hover:text-blue-600 dark:hover:text-blue-400' : 'hover:text-blue-600 dark:hover:text-blue-400'
-                }`}
-              onClick={() => handleNavClick('home')}
-            >
-              Home
-            </span>
-          </li>
-          <li>
-            <span
-              className={`nav-link cursor-pointer transition-colors duration-300 ${scrolled ? 'hover:text-blue-600 dark:hover:text-blue-400' : 'hover:text-blue-600 dark:hover:text-blue-400'
-                }`}
-              onClick={() => handleNavClick('skills')}
-            >
-              Skills
-            </span>
-          </li>
-          <li>
-            <Link
-              className={`nav-link transition-colors duration-300 ${scrolled ? 'hover:text-blue-600 dark:hover:text-blue-400' : 'hover:text-blue-600 dark:hover:text-blue-400'
-                }`}
-              to="/projects"
-              onClick={() => setMenuOpen(false)}
-            >
-              Projects
-            </Link>
-          </li>
-          <li>
-            <Link
-              className={`nav-link transition-colors duration-300 ${scrolled ? 'hover:text-blue-600 dark:hover:text-blue-400' : 'hover:text-blue-600 dark:hover:text-blue-400'
-                }`}
-              to="/certificates"
-              onClick={() => setMenuOpen(false)}
-            >
-              Certificates
-            </Link>
-          </li>
-          <li>
-            <span
-              className={`nav-link cursor-pointer transition-colors duration-300 ${scrolled ? 'hover:text-blue-600 dark:hover:text-blue-400' : 'hover:text-blue-600 dark:hover:text-blue-400'
-                }`}
-              onClick={() => handleNavClick('contacting')}
-            >
-              Contact
-            </span>
-          </li>
+          {/* Desktop Nav */}
+          <ul className="hidden md:flex items-center gap-6">
+            {navLinks.map((link, index) => (
+              <li key={index}>
+                {link.to ? (
+                  <Link
+                    to={link.to}
+                    className="text-[13px] font-medium text-zinc-500 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white transition-colors"
+                  >
+                    {link.name}
+                  </Link>
+                ) : (
+                  <button
+                    onClick={link.action}
+                    className="bg-transparent text-[13px] font-medium text-zinc-500 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white transition-colors"
+                  >
+                    {link.name}
+                  </button>
+                )}
+              </li>
+            ))}
+          </ul>
 
-          {/* Dark Mode Toggle - Desktop */}
-          <li>
+          {/* Separator */}
+          <div className="hidden md:block w-px h-4 bg-zinc-200 dark:bg-white/10" />
+
+          {/* Actions */}
+          <div className="flex items-center gap-3">
             <button
               onClick={toggleDarkMode}
-              className={`relative w-12 h-6 border border-gray-100 rounded-full transition-all duration-300 focus:outline-none ${darkMode ? 'bg-gray-700' : 'bg-gray-300'
-                }`}
-              aria-label="Toggle dark mode"
+              className="bg-transparent text-zinc-500 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white transition-colors"
+              aria-label="Toggle Dark Mode"
             >
-              <div
-                className={`absolute top-0.5 w-5 h-5 bg-white rounded-full shadow-md transition-all duration-300 flex items-center justify-center cursor-pointer ${darkMode ? 'translate-x-3' : 'translate-x-0.5'
-                  }`}
-              >
-                {darkMode ? (
-                  <FaMoon className="text-yellow-400 text-xs" />
-                ) : (
-                  <FaSun className="text-yellow-500 text-xs" />
-                )}
-              </div>
+              {darkMode ? <Moon size={16} /> : <Sun size={16} />}
             </button>
-          </li>
-        </ul>
 
-        <div className="md:hidden flex items-center gap-3 z-50">
-          {/* Dark Mode Toggle - Mobile */}
-          <button
-            onClick={toggleDarkMode}
-            className={`relative w-12 h-6 border border-gray-100 rounded-full transition-all duration-300 focus:outline-none ${darkMode ? 'bg-gray-700' : 'bg-gray-300'
-              }`}
-            aria-label="Toggle dark mode"
-          >
-            <div
-              className={`absolute top-0.5 w-5 h-5 bg-white rounded-full shadow-md transition-all duration-300 flex items-center justify-center cursor-pointer ${darkMode ? 'translate-x-3' : 'translate-x-0.5'
-                }`}
+            <button
+              className="bg-transparent md:hidden text-zinc-900 dark:text-white"
+              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             >
-              {darkMode ? (
-                <FaMoon className="text-yellow-400 text-xs" />
-              ) : (
-                <FaSun className="text-yellow-500 text-xs" />
-              )}
-            </div>
-          </button>
-
-          {/* Menu Button */}
-          <button onClick={() => setMenuOpen(!menuOpen)}>
-            {menuOpen ? <FaTimes size={24} /> : <FaBars size={24} className='bg-transparent' />}
-          </button>
+              {mobileMenuOpen ? <X size={20} /> : <Menu size={20} />}
+            </button>
+          </div>
         </div>
+      </motion.nav>
 
-        {menuOpen && (
-          <ul
-            ref={menuRef}
-            className="absolute top-[100%] right-0 left-0 w-full 
-      bg-black/60 dark:bg-white/10 backdrop-blur-lg rounded-2xl py-6 
-      text-white dark:text-white text-center flex flex-col gap-5 text-base sm:text-lg font-semibold md:hidden
-      transition-all duration-500 ease-out 
-      animate-slide-down"
+      {/* Mobile Menu - Minimal Overlay */}
+      <AnimatePresence>
+        {mobileMenuOpen && (
+          <motion.div
+            initial={{ opacity: 0, scale: 0.95, y: -10, x: "-50%" }}
+            animate={{ opacity: 1, scale: 1, y: 0, x: "-50%" }}
+            exit={{ opacity: 0, scale: 0.95, y: -10, x: "-50%" }}
+            className="fixed top-20 left-1/2 w-[90%] max-w-sm z-40 md:hidden"
           >
-            <li className="hover:text-blue-300 transition duration-300">
-              <span onClick={() => handleNavClick('home')}>Home</span>
-            </li>
-            <li className="hover:text-blue-300 transition duration-300">
-              <span onClick={() => handleNavClick('skills')}>Skills</span>
-            </li>
-            <li className="hover:text-blue-300 transition duration-300">
-              <Link to="/projects" onClick={() => setMenuOpen(false)}>Projects</Link>
-            </li>
-            <li className="hover:text-blue-300 transition duration-300">
-              <Link to="/certificates" onClick={() => setMenuOpen(false)}>Certificates</Link>
-            </li>
-            <li className="hover:text-blue-300 transition duration-300">
-              <span onClick={() => handleNavClick('contact')}>Contact</span>
-            </li>
-          </ul>
+            <div className="bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-2xl p-2 shadow-xl flex flex-col gap-1">
+              {navLinks.map((link, index) => (
+                <div key={index} className="w-full">
+                  {link.to ? (
+                    <Link
+                      to={link.to}
+                      onClick={() => setMobileMenuOpen(false)}
+                      className="block px-4 py-2.5 text-center text-sm text-zinc-600 dark:text-zinc-300 font-medium hover:bg-zinc-50 dark:hover:bg-zinc-800/50 rounded-xl transition-colors"
+                    >
+                      {link.name}
+                    </Link>
+                  ) : (
+                    <button
+                      onClick={link.action}
+                      className="bg-transparent block w-full px-4 py-2.5 text-center text-sm text-zinc-600 dark:text-zinc-300 font-medium hover:bg-zinc-50 dark:hover:bg-zinc-800/50 rounded-xl transition-colors"
+                    >
+                      {link.name}
+                    </button>
+                  )}
+                </div>
+              ))}
+            </div>
+          </motion.div>
         )}
-
-      </nav>
-    </div>
+      </AnimatePresence>
+    </>
   );
 }
 
